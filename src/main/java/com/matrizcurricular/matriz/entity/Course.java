@@ -18,7 +18,7 @@ public class Course {
     @Column(name = "name", nullable = false)
     private String name;
 
-    @Column(name = "curriculum_code", nullable = false)
+    @Column(name = "curriculum_code", nullable = false, length = 8)
     private String curriculumCode;
 
     @Column(name = "number_semesters", nullable = false)
