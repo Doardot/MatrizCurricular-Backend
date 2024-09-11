@@ -1,10 +1,13 @@
 package com.matrizcurricular.matriz.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
+@Entity
+@Table(name = "subject")
 public class Subject {
 
     @Id
@@ -15,12 +18,12 @@ public class Subject {
     @Column(name = "name", nullable = false)
     private String name;
 
-    @Column(name = "cod_cred", nullable = false)
-    private String codCred;
+    @Column(name = "credit_code", nullable = false)
+    private String creditCode;
 
     @Column(name = "credits", nullable = false)
     private int credits;
 
-    @Column(name = "completed", nullable = false)
-    private Boolean completed;
+    @Column(name = "approved", nullable = false)
+    private Boolean approved;
 }

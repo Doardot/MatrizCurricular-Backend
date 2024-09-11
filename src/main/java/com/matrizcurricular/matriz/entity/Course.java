@@ -1,16 +1,13 @@
 package com.matrizcurricular.matriz.entity;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
-import java.time.LocalDateTime;
-
-@Getter
-@Setter
 @Entity
 @Table(name = "course")
-
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Course {
 
     @Id
@@ -27,6 +24,4 @@ public class Course {
     @Column(name = "number_semesters", nullable = false)
     private int numberSemesters;
 
-    //private List<Disciplina> disciplinas;
-    //private List<Requisito> requisitos;
 }
