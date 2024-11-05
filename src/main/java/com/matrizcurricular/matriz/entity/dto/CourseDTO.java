@@ -1,12 +1,5 @@
 package com.matrizcurricular.matriz.entity.dto;
 
-import lombok.*;
-
-@Getter
-@Setter
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
 public class CourseDTO {
 
     private Long id;
