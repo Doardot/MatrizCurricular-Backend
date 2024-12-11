@@ -1,0 +1,8 @@
+INSERT INTO course (curriculum_code, name, number_semesters, extracurricular_hours)
+VALUES ('COU001', 'Computer Science', 8, 160);
+
+INSERT INTO subject (credit_code, name, credits, description)
+VALUES ('SUB101', 'Mathematics', 5, 'Basic Math Course');
+
+INSERT INTO course_subject (course_id, subject_id, semester)
+VALUES ('COU001', 'SUB101', 1);

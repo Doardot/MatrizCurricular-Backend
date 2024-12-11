@@ -4,12 +4,14 @@ services:
   db:
     image: mysql:8.0
     environment:
-      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+      MYSQL_ROOT_PASSWORD: "12345678"
       MYSQL_DATABASE: matrizcurricular
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
     ports:
-
-      "3306:3306"
-    volumes: db_data:/var/lib/mysql
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
 
 volumes:
   db_data:
