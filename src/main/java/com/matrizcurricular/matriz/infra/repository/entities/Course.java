@@ -27,7 +27,7 @@ public class Course {
     @Column(name = "extracurricular_hours", nullable = false)
     private int extracurricularHours;
 
-    @OneToMany(mappedBy = "id.course", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "id.course")
     private Set<CourseSubject> courseSubjects;
 
     public Course() {

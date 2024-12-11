@@ -3,6 +3,8 @@ package com.matrizcurricular.matriz.infra.repository.entities;
 import java.util.HashSet;
 import java.util.Set;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -27,7 +29,7 @@ public class Subject {
     @Column(name = "description", nullable = false)
     private String description;
 
-    @OneToMany(mappedBy = "id.subject", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "id.subject")
     private Set<CourseSubject> courseSubjects;
 
     // @Column(name = "approved", nullable = false)

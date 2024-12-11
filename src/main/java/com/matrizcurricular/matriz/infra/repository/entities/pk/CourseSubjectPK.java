@@ -1,5 +1,6 @@
 package com.matrizcurricular.matriz.infra.repository.entities.pk;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.matrizcurricular.matriz.infra.repository.entities.Course;
 import com.matrizcurricular.matriz.infra.repository.entities.Subject;
 
@@ -18,6 +19,7 @@ public class CourseSubjectPK {
    @JoinColumn(name = "subject_id", referencedColumnName = "credit_code", nullable = false)
    private Subject subject;
 
+   @JsonIgnore
    public Course getCourse() {
       return course;
    }
