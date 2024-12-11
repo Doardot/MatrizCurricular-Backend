@@ -1,4 +1,4 @@
-package com.matrizcurricular.matriz.controller;
+package com.matrizcurricular.matriz.infra.controller;
 
 import java.util.List;
 
@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.matrizcurricular.matriz.entity.Subject;
-import com.matrizcurricular.matriz.service.SubjectService;
+import com.matrizcurricular.matriz.domain.service.SubjectService;
+import com.matrizcurricular.matriz.infra.repository.entities.Subject;
 
 @RestController
 @RequestMapping("/subject")

@@ -1,4 +1,4 @@
-package com.matrizcurricular.matriz.entity;
+package com.matrizcurricular.matriz.infra.repository.entities;
 
 import java.io.Serializable;
 

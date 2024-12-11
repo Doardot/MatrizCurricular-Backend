@@ -1,4 +1,4 @@
-package com.matrizcurricular.matriz.entity.dto;
+package com.matrizcurricular.matriz.application.dto;
 
 public class CourseDTO {
 
@@ -54,6 +54,5 @@ public class CourseDTO {
     public void setNumberSemesters(int numberSemesters) {
         this.numberSemesters = numberSemesters;
     }
-    
-    
+
 }

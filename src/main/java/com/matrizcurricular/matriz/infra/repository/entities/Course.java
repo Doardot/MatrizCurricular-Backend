@@ -1,4 +1,4 @@
-package com.matrizcurricular.matriz.entity;
+package com.matrizcurricular.matriz.infra.repository.entities;
 
 import java.io.Serializable;
 
@@ -7,13 +7,11 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "semester")
-public class Semester implements Serializable{
+@Table(name = "course")
+public class Course implements Serializable{
     private static final long serialVersionUID = 1L;
 
     @Id
@@ -21,20 +19,23 @@ public class Semester implements Serializable{
     @Column(name = "id", nullable = false)
     private Long id;
 
-    @Column(name = "semester_number", nullable = false)
-    private int semesterNumber;
+    @Column(name = "name", nullable = false)
+    private String name;
 
-    @ManyToOne
-    @JoinColumn(name = "id_user", referencedColumnName = "id", nullable = false)
-    private User user;
+    @Column(name = "curriculum_code", nullable = false, length = 8)
+    private String curriculumCode;
 
-    public Semester() {
+    @Column(name = "number_semesters", nullable = false)
+    private int numberSemesters;
+
+    public Course() {
     }
 
-    public Semester(Long id, int semesterNumber, User user) {
+    public Course(Long id, String name, String curriculumCode, int numberSemesters) {
         this.id = id;
-        this.semesterNumber = semesterNumber;
-        this.user = user;
+        this.name = name;
+        this.curriculumCode = curriculumCode;
+        this.numberSemesters = numberSemesters;
     }
 
     public Long getId() {
@@ -45,20 +46,28 @@ public class Semester implements Serializable{
         this.id = id;
     }
 
-    public int getSemesterNumber() {
-        return semesterNumber;
+    public String getName() {
+        return name;
     }
 
-    public void setSemesterNumber(int semesterNumber) {
-        this.semesterNumber = semesterNumber;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public User getUser() {
-        return user;
+    public String getCurriculumCode() {
+        return curriculumCode;
     }
 
-    public void setUser(User user) {
-        this.user = user;
+    public void setCurriculumCode(String curriculumCode) {
+        this.curriculumCode = curriculumCode;
+    }
+
+    public int getNumberSemesters() {
+        return numberSemesters;
+    }
+
+    public void setNumberSemesters(int numberSemesters) {
+        this.numberSemesters = numberSemesters;
     }
 
     @Override
@@ -77,7 +86,7 @@ public class Semester implements Serializable{
             return false;
         if (getClass() != obj.getClass())
             return false;
-        Semester other = (Semester) obj;
+        Course other = (Course) obj;
         if (id == null) {
             if (other.id != null)
                 return false;

@@ -1,4 +1,4 @@
-package com.matrizcurricular.matriz.entity;
+package com.matrizcurricular.matriz.infra.repository.entities;
 
 import java.io.Serializable;
 
@@ -7,11 +7,13 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "course")
-public class Course implements Serializable{
+@Table(name = "user")
+public class User implements Serializable{
     private static final long serialVersionUID = 1L;
 
     @Id
@@ -19,23 +21,32 @@ public class Course implements Serializable{
     @Column(name = "id", nullable = false)
     private Long id;
 
+    @ManyToOne
+    @JoinColumn(name = "id_course", referencedColumnName = "id", nullable = false)
+    private Course course;
+
     @Column(name = "name", nullable = false)
     private String name;
 
-    @Column(name = "curriculum_code", nullable = false, length = 8)
-    private String curriculumCode;
+    @Column(name = "email", nullable = false)
+    private String email;
 
-    @Column(name = "number_semesters", nullable = false)
-    private int numberSemesters;
+    @Column(name = "password", nullable = false)
+    private int password;
 
-    public Course() {
+    @Column(name = "role", nullable = false)
+    private int role;
+
+    public User() {
     }
 
-    public Course(Long id, String name, String curriculumCode, int numberSemesters) {
+    public User(Long id, Course course, String name, String email, int password, int role) {
         this.id = id;
+        this.course = course;
         this.name = name;
-        this.curriculumCode = curriculumCode;
-        this.numberSemesters = numberSemesters;
+        this.email = email;
+        this.password = password;
+        this.role = role;
     }
 
     public Long getId() {
@@ -46,6 +57,14 @@ public class Course implements Serializable{
         this.id = id;
     }
 
+    public Course getCourse() {
+        return course;
+    }
+
+    public void setCourse(Course course) {
+        this.course = course;
+    }
+
     public String getName() {
         return name;
     }
@@ -54,20 +73,28 @@ public class Course implements Serializable{
         this.name = name;
     }
 
-    public String getCurriculumCode() {
-        return curriculumCode;
+    public String getEmail() {
+        return email;
     }
 
-    public void setCurriculumCode(String curriculumCode) {
-        this.curriculumCode = curriculumCode;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public int getNumberSemesters() {
-        return numberSemesters;
+    public int getPassword() {
+        return password;
     }
 
-    public void setNumberSemesters(int numberSemesters) {
-        this.numberSemesters = numberSemesters;
+    public void setPassword(int password) {
+        this.password = password;
+    }
+
+    public int getRole() {
+        return role;
+    }
+
+    public void setRole(int role) {
+        this.role = role;
     }
 
     @Override
@@ -86,7 +113,7 @@ public class Course implements Serializable{
             return false;
         if (getClass() != obj.getClass())
             return false;
-        Course other = (Course) obj;
+        User other = (User) obj;
         if (id == null) {
             if (other.id != null)
                 return false;
