@@ -1,6 +1,5 @@
 package com.matrizcurricular.matriz.infra.repository.entities;
 
-import java.io.Serializable;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -13,8 +12,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "semester")
-public class Semester implements Serializable{
-    private static final long serialVersionUID = 1L;
+public class Semester {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
