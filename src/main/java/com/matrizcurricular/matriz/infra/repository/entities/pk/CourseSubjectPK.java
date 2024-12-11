@@ -11,11 +11,11 @@ import jakarta.persistence.ManyToOne;
 public class CourseSubjectPK {
 
    @ManyToOne
-   @JoinColumn(name = "course_id", referencedColumnName = "curriculumCode", nullable = false)
+   @JoinColumn(name = "course_id", referencedColumnName = "curriculum_code", nullable = false)
    private Course course;
 
    @ManyToOne
-   @JoinColumn(name = "subject_id", referencedColumnName = "creditCode", nullable = false)
+   @JoinColumn(name = "subject_id", referencedColumnName = "credit_code", nullable = false)
    private Subject subject;
 
    public Course getCourse() {
