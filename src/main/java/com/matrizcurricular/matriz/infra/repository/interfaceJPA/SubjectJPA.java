@@ -4,6 +4,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.matrizcurricular.matriz.infra.repository.entities.Subject;
 
-public interface SubjectRepository extends JpaRepository<Subject, String> {
+public interface SubjectJPA extends JpaRepository<Subject, String> {
     
 }

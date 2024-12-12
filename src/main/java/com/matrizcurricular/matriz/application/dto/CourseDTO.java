@@ -1,58 +1,47 @@
 package com.matrizcurricular.matriz.application.dto;
 
+import java.util.Set;
+
 public class CourseDTO {
 
-    private Long id;
-    private String name;
     private String curriculumCode;
+    private String name;
     private int numberSemesters;
+    private int extracurricularHours;
+    private Set<CourseSubjectDTO> courseSubjects;
 
-    public CourseDTO(String name, String curriculumCode, int numberSemesters) {
-        this.name = name;
+    public CourseDTO(String curriculumCode, String name, int numberSemesters, int extracurricularHours,
+            Set<CourseSubjectDTO> courseSubjects) {
         this.curriculumCode = curriculumCode;
-        this.numberSemesters = numberSemesters;
-    }
-
-    public CourseDTO(Long id, String name, String curriculumCode, int numberSemesters) {
-        this.id = id;
         this.name = name;
-        this.curriculumCode = curriculumCode;
         this.numberSemesters = numberSemesters;
-    }
-
-    public CourseDTO() {
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+        this.extracurricularHours = extracurricularHours;
+        this.courseSubjects = courseSubjects;
     }
 
     public String getCurriculumCode() {
         return curriculumCode;
     }
 
-    public void setCurriculumCode(String curriculumCode) {
-        this.curriculumCode = curriculumCode;
+    public String getName() {
+        return name;
     }
 
     public int getNumberSemesters() {
         return numberSemesters;
     }
 
-    public void setNumberSemesters(int numberSemesters) {
-        this.numberSemesters = numberSemesters;
+    public int getExtracurricularHours() {
+        return extracurricularHours;
     }
 
+    public Set<CourseSubjectDTO> getCourseSubjects() {
+        return courseSubjects;
+    }
+
+    public String toString() {
+        return "CourseDTO - curriculumCode = " + curriculumCode + ", name = " + name + ", numberSemesters = "
+                + numberSemesters + ", extracurricularHours = " + extracurricularHours + ", courseSubjects = "
+                + courseSubjects.toString();
+    }
 }

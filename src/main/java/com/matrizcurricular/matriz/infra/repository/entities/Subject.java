@@ -1,11 +1,7 @@
 package com.matrizcurricular.matriz.infra.repository.entities;
 
-import java.util.HashSet;
 import java.util.Set;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
-import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -32,18 +28,15 @@ public class Subject {
     @OneToMany(mappedBy = "id.subject")
     private Set<CourseSubject> courseSubjects;
 
-    // @Column(name = "approved", nullable = false)
-    // private Boolean approved;
-
     public Subject() {
     }
 
-    public Subject(String name, String creditCode, int credits, String description) {
+    public Subject(String name, String creditCode, int credits, String description, Set<CourseSubject> courseSubjects) {
         this.name = name;
         this.creditCode = creditCode;
         this.credits = credits;
         this.description = description;
-        this.courseSubjects = new HashSet<>(); 
+        this.courseSubjects = courseSubjects;
     }
 
     public String getName() {

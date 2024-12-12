@@ -1,19 +1,22 @@
 package com.matrizcurricular.matriz.domain.service;
 
-import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.matrizcurricular.matriz.infra.repository.entities.Subject;
-import com.matrizcurricular.matriz.infra.repository.interfaceJPA.SubjectRepository;
+import com.matrizcurricular.matriz.domain.interfaceRepository.ISubjectRepository;
+import com.matrizcurricular.matriz.domain.models.SubjectModel;
 
 @Service
 public class SubjectService {
-    @Autowired
-    private SubjectRepository repository;
+    private ISubjectRepository repository;
 
-    public List<Subject> findAll() {
-        return repository.findAll();
+    @Autowired
+    public SubjectService(ISubjectRepository subjectRepository) {
+        this.repository = subjectRepository;
+    }
+
+    public SubjectModel getSubjectByCreditCode(String creditCode) {
+        return repository.getSubjectByCreditCode(creditCode);
     }
 }

@@ -1,9 +1,7 @@
 package com.matrizcurricular.matriz.infra.repository.entities;
 
-import java.util.HashSet;
 import java.util.Set;
 
-import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -33,12 +31,12 @@ public class Course {
     public Course() {
     }
 
-    public Course(String name, String curriculumCode, int numberSemesters, int extracurricularHours) {
+    public Course(String name, String curriculumCode, int numberSemesters, int extracurricularHours, Set<CourseSubject> courseSubjects) {
         this.name = name;
         this.curriculumCode = curriculumCode;
         this.numberSemesters = numberSemesters;
         this.extracurricularHours = extracurricularHours;
-        this.courseSubjects = new HashSet<>();
+        this.courseSubjects = courseSubjects;
     }
 
     public String getName() {

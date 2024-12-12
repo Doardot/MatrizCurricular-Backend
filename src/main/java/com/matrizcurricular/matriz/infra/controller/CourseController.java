@@ -1,27 +1,28 @@
 package com.matrizcurricular.matriz.infra.controller;
 
-import java.util.List;
-
-import org.springframework.http.ResponseEntity;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.matrizcurricular.matriz.domain.service.CourseService;
-import com.matrizcurricular.matriz.infra.repository.entities.Course;
+import com.matrizcurricular.matriz.application.dto.CourseDTO;
+import com.matrizcurricular.matriz.application.useCase.GetCourseByCurriculumUC;
 
 @RestController
 @RequestMapping("/course")
 public class CourseController {
-    private CourseService service;
+    private GetCourseByCurriculumUC getCourseByCurriculumUC;
 
-    public CourseController(CourseService courseService){
-        this.service = courseService;
+    @Autowired
+    public CourseController(GetCourseByCurriculumUC getCourseByCurriculumUC) {
+        this.getCourseByCurriculumUC = getCourseByCurriculumUC;
     }
 
-    @GetMapping()
-    public ResponseEntity<List<Course>>findAll(){
-        List<Course> list = service.findAll();
-        return ResponseEntity.ok().body(list);
+    @GetMapping("/{curriculumCode}")
+    @CrossOrigin("*")
+    public CourseDTO getCourseById(@PathVariable String curriculumCode) {
+        return getCourseByCurriculumUC.run(curriculumCode);
     }
 }

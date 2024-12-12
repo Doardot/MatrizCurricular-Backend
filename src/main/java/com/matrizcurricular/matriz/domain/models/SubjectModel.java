@@ -1,16 +1,21 @@
 package com.matrizcurricular.matriz.domain.models;
 
-public class SubjetModel {
+import java.util.Set;
+
+public class SubjectModel {
    private String creditCode;
    private String name;
    private int credits;
    private String description;
+   private Set<CourseSubjectModel> courseSubjects;
 
-   public SubjetModel(String creditCode, String name, int credits, String description) {
+   public SubjectModel(String creditCode, String name, int credits, String description,
+         Set<CourseSubjectModel> courseSubjects) {
       this.creditCode = creditCode;
       this.name = name;
       this.credits = credits;
       this.description = description;
+      this.courseSubjects = courseSubjects;
    }
 
    public String getCreditCode() {
@@ -43,5 +48,13 @@ public class SubjetModel {
 
    public void setDescription(String description) {
       this.description = description;
+   }
+
+   public Set<CourseSubjectModel> getCourseSubjects() {
+      return courseSubjects;
+   }
+
+   public void setCourseSubjects(Set<CourseSubjectModel> courseSubjects) {
+      this.courseSubjects = courseSubjects;
    }
 }

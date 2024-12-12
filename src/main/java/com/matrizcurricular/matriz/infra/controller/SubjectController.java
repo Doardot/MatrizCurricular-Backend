@@ -1,26 +1,28 @@
 package com.matrizcurricular.matriz.infra.controller;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.matrizcurricular.matriz.domain.service.SubjectService;
-import com.matrizcurricular.matriz.infra.repository.entities.Subject;
+import com.matrizcurricular.matriz.application.dto.SubjectDTO;
+import com.matrizcurricular.matriz.application.useCase.GetSubjectByCreditCodeUC;
 
 @RestController
 @RequestMapping("/subject")
 public class SubjectController {
-    @Autowired
-    private SubjectService service;
+    private GetSubjectByCreditCodeUC getSubjectByCreditCodeUC;
 
-    @GetMapping
-    public ResponseEntity<List<Subject>> findAll() {
-        List<Subject> list = service.findAll();
-        return ResponseEntity.ok().body(list);
+    @Autowired
+    public SubjectController(GetSubjectByCreditCodeUC getSubjectByCreditCodeUC) {
+        this.getSubjectByCreditCodeUC = getSubjectByCreditCodeUC;
     }
-    
+
+    @GetMapping("/{creditCode}")
+    @CrossOrigin("*")
+    public SubjectDTO getSubjectByCreditCode(@PathVariable String creditCode) {
+        return getSubjectByCreditCodeUC.run(creditCode);
+    }
 }

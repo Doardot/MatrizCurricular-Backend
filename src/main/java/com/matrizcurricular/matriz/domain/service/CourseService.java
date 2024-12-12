@@ -1,21 +1,19 @@
 package com.matrizcurricular.matriz.domain.service;
 
-import java.util.List;
-
 import org.springframework.stereotype.Service;
 
-import com.matrizcurricular.matriz.infra.repository.entities.Course;
-import com.matrizcurricular.matriz.infra.repository.interfaceJPA.CourseRepository;
+import com.matrizcurricular.matriz.domain.interfaceRepository.ICourseRepository;
+import com.matrizcurricular.matriz.domain.models.CourseModel;
 
 @Service
 public class CourseService {
-    private CourseRepository repository;
+    private ICourseRepository repository;
 
-    public CourseService(CourseRepository courseRepository){
+    public CourseService(ICourseRepository courseRepository) {
         this.repository = courseRepository;
     }
 
-    public List<Course> findAll(){
-        return repository.findAll();
+    public CourseModel getCourseByCurriculum(String curriculum) {
+        return repository.getCourseByCurriculum(curriculum);
     }
 }
