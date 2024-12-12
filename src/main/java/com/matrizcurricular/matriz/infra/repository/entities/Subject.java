@@ -1,11 +1,8 @@
 package com.matrizcurricular.matriz.infra.repository.entities;
 
-import java.util.Set;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
@@ -25,18 +22,14 @@ public class Subject {
     @Column(name = "description", nullable = false)
     private String description;
 
-    @OneToMany(mappedBy = "id.subject")
-    private Set<CourseSubject> courseSubjects;
-
     public Subject() {
     }
 
-    public Subject(String name, String creditCode, int credits, String description, Set<CourseSubject> courseSubjects) {
+    public Subject(String name, String creditCode, int credits, String description) {
         this.name = name;
         this.creditCode = creditCode;
         this.credits = credits;
         this.description = description;
-        this.courseSubjects = courseSubjects;
     }
 
     public String getName() {

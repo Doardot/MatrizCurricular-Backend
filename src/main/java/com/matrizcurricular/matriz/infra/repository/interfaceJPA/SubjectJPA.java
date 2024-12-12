@@ -1,9 +1,11 @@
 package com.matrizcurricular.matriz.infra.repository.interfaceJPA;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+import java.util.Optional;
+
+import org.springframework.data.repository.CrudRepository;
 
 import com.matrizcurricular.matriz.infra.repository.entities.Subject;
 
-public interface SubjectJPA extends JpaRepository<Subject, String> {
-    
+public interface SubjectJPA extends CrudRepository<Subject, String> {
+    Optional<Subject> findById(String creditCode);
 }

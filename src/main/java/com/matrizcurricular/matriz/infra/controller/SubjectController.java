@@ -1,6 +1,5 @@
 package com.matrizcurricular.matriz.infra.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,7 +14,6 @@ import com.matrizcurricular.matriz.application.useCase.GetSubjectByCreditCodeUC;
 public class SubjectController {
     private GetSubjectByCreditCodeUC getSubjectByCreditCodeUC;
 
-    @Autowired
     public SubjectController(GetSubjectByCreditCodeUC getSubjectByCreditCodeUC) {
         this.getSubjectByCreditCodeUC = getSubjectByCreditCodeUC;
     }

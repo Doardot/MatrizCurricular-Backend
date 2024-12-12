@@ -1,8 +1,12 @@
 package com.matrizcurricular.matriz.application.useCase;
 
+import org.springframework.stereotype.Component;
+
 import com.matrizcurricular.matriz.application.dto.SubjectDTO;
+import com.matrizcurricular.matriz.domain.models.SubjectModel;
 import com.matrizcurricular.matriz.domain.service.SubjectService;
 
+@Component
 public class GetSubjectByCreditCodeUC {
    private SubjectService subjectService;
 
@@ -11,7 +15,7 @@ public class GetSubjectByCreditCodeUC {
    }
 
    public SubjectDTO run(String creditCode) {
-      //return subjectService.getSubjectByCreditCode(creditCode);
-      return null;
+      SubjectModel subject = subjectService.getSubjectByCreditCode(creditCode);
+      return new SubjectDTO(subject.getCreditCode(), subject.getName(), subject.getCredits(), subject.getDescription());
    }
 }

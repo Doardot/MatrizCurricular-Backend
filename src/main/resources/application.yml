@@ -1,4 +1,6 @@
 spring:
+    application:
+        name: matriz-curricular
     datasource:
         url: jdbc:mysql://localhost:3306/matrizcurricular?createDatabaseIfNotExist=true
         username: root

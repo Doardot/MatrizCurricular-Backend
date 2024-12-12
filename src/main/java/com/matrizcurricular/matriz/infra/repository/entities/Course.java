@@ -1,11 +1,8 @@
 package com.matrizcurricular.matriz.infra.repository.entities;
 
-import java.util.Set;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
@@ -25,18 +22,14 @@ public class Course {
     @Column(name = "extracurricular_hours", nullable = false)
     private int extracurricularHours;
 
-    @OneToMany(mappedBy = "id.course")
-    private Set<CourseSubject> courseSubjects;
-
     public Course() {
     }
 
-    public Course(String name, String curriculumCode, int numberSemesters, int extracurricularHours, Set<CourseSubject> courseSubjects) {
+    public Course(String name, String curriculumCode, int numberSemesters, int extracurricularHours) {
         this.name = name;
         this.curriculumCode = curriculumCode;
         this.numberSemesters = numberSemesters;
         this.extracurricularHours = extracurricularHours;
-        this.courseSubjects = courseSubjects;
     }
 
     public String getName() {
@@ -69,13 +62,5 @@ public class Course {
 
     public void setExtracurricularHours(int extracurricularHours) {
         this.extracurricularHours = extracurricularHours;
-    }
-
-    public Set<CourseSubject> getCourseSubjects() {
-        return courseSubjects;
-    }
-
-    public void setCourseSubjects(Set<CourseSubject> courseSubjects) {
-        this.courseSubjects = courseSubjects;
     }
 }

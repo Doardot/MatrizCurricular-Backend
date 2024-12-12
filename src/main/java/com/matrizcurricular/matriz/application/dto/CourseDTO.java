@@ -1,22 +1,16 @@
 package com.matrizcurricular.matriz.application.dto;
-
-import java.util.Set;
-
 public class CourseDTO {
 
     private String curriculumCode;
     private String name;
     private int numberSemesters;
     private int extracurricularHours;
-    private Set<CourseSubjectDTO> courseSubjects;
 
-    public CourseDTO(String curriculumCode, String name, int numberSemesters, int extracurricularHours,
-            Set<CourseSubjectDTO> courseSubjects) {
+    public CourseDTO(String curriculumCode, String name, int numberSemesters, int extracurricularHours) {
         this.curriculumCode = curriculumCode;
         this.name = name;
         this.numberSemesters = numberSemesters;
         this.extracurricularHours = extracurricularHours;
-        this.courseSubjects = courseSubjects;
     }
 
     public String getCurriculumCode() {
@@ -35,13 +29,8 @@ public class CourseDTO {
         return extracurricularHours;
     }
 
-    public Set<CourseSubjectDTO> getCourseSubjects() {
-        return courseSubjects;
-    }
-
     public String toString() {
         return "CourseDTO - curriculumCode = " + curriculumCode + ", name = " + name + ", numberSemesters = "
-                + numberSemesters + ", extracurricularHours = " + extracurricularHours + ", courseSubjects = "
-                + courseSubjects.toString();
+                + numberSemesters + ", extracurricularHours = " + extracurricularHours;
     }
 }

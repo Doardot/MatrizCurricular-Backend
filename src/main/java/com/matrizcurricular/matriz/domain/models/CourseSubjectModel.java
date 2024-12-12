@@ -1,21 +1,18 @@
 package com.matrizcurricular.matriz.domain.models;
 
-import java.util.HashMap;
-
-import com.matrizcurricular.matriz.domain.enums.RequisiteType;
+import java.util.List;
 
 public class CourseSubjectModel {
    private CourseModel course;
    private SubjectModel subject;
    private int semester;
-   private HashMap<SubjectModel, RequisiteType> requisiteTypes;
+   private List<RequirementsModel> requirements;
 
-
-   public CourseSubjectModel(CourseModel course, SubjectModel subject, int semester) {
+   public CourseSubjectModel(CourseModel course, SubjectModel subject, int semester, List<RequirementsModel> requirements) {
       this.course = course;
       this.subject = subject;
       this.semester = semester;
-      this.requisiteTypes = new HashMap<>();
+      this.requirements = requirements;
    }
 
    public CourseModel getCourse() {
@@ -42,11 +39,11 @@ public class CourseSubjectModel {
       this.semester = semester;
    }
 
-   public HashMap<SubjectModel, RequisiteType> getRequisiteTypes() {
-      return requisiteTypes;
+   public List<RequirementsModel> getRequirements() {
+      return requirements;
    }
 
-   public void setRequisiteTypes(HashMap<SubjectModel, RequisiteType> requisiteTypes) {
-      this.requisiteTypes = requisiteTypes;
+   public void setRequirements(List<RequirementsModel> requirements) {
+      this.requirements = requirements;
    }
 }
