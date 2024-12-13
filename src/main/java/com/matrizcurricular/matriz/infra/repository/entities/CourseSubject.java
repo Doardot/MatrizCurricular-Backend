@@ -33,8 +33,8 @@ public class CourseSubject {
    @Column(name = "semester", nullable = false)
    private int semester;
 
-   //@OneToMany(mappedBy = "subject_id")
-   //private List<Requirements> requirements;
+   @OneToMany(mappedBy = "courseSubject")
+   private List<Requirements> requirements;
 
    public CourseSubject() {
    }

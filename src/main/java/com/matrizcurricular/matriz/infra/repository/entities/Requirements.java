@@ -23,15 +23,15 @@ public class Requirements {
    private RequisiteType requisiteType;
 
    @ManyToOne
-   @JoinColumn(name = "subject_id", referencedColumnName = "credit_code", nullable = false)
-   private Subject subject;
+   @JoinColumn(name = "subject_id", referencedColumnName = "subject_id", nullable = false)
+   private CourseSubject courseSubject;
 
    public Requirements() {
    }
 
-   public Requirements(RequisiteType requisiteType, Subject subject) {
+   public Requirements(RequisiteType requisiteType, CourseSubject courseSubject) {
       this.requisiteType = requisiteType;
-      this.subject = subject;
+      this.courseSubject = courseSubject;
    }
 
    public long getId() {
@@ -50,11 +50,11 @@ public class Requirements {
       this.requisiteType = requisiteType;
    }
 
-   public Subject getSubject() {
-      return subject;
+   public CourseSubject getCourseSubject() {
+      return courseSubject;
    }
 
-   public void setSubject(Subject subject) {
-      this.subject = subject;
+   public void setCourseSubject(CourseSubject courseSubject) {
+      this.courseSubject = courseSubject;
    }
 }
