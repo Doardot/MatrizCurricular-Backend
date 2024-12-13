@@ -5,12 +5,14 @@ import com.matrizcurricular.matriz.domain.enums.RequisiteType;
 public class RequirementsDTO {
    private long id;
    private RequisiteType requisiteType;
-   private SubjectDTO subject;
+   private String creditCode;
+   private String curriculumCode;
 
-   public RequirementsDTO(long id, RequisiteType requisiteType, SubjectDTO subject) {
+   public RequirementsDTO(long id, RequisiteType requisiteType, String creditCode, String curriculumCode) {
       this.id = id;
       this.requisiteType = requisiteType;
-      this.subject = subject;
+      this.creditCode = creditCode;
+      this.curriculumCode = curriculumCode;
    }
 
    public long getId() {
@@ -25,7 +27,27 @@ public class RequirementsDTO {
       return requisiteType;
    }
 
+   public void setRequisiteType(RequisiteType requisiteType) {
+      this.requisiteType = requisiteType;
+   }
+
+   public String getCreditCode() {
+      return creditCode;
+   }
+
+   public void setCreditCode(String creditCode) {
+      this.creditCode = creditCode;
+   }
+
+   public String getCurriculumCode() {
+      return curriculumCode;
+   }
+
+   public void setCurriculumCode(String curriculumCode) {
+      this.curriculumCode = curriculumCode;
+   }
+
    public String toString() {
-      return "RequirementsDTO - id = " + id + ", requisiteType = " + requisiteType + ", subject = " + subject;
+      return "RequirementsDTO - id = " + id + ", requisiteType = " + requisiteType;
    }
 }

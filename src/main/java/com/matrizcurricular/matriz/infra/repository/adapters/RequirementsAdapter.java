@@ -9,8 +9,7 @@ import com.matrizcurricular.matriz.infra.repository.entities.Requirements;
 public class RequirementsAdapter {
 
    public static Requirements fromModel(RequirementsModel requirementsModel) {
-      return new Requirements(requirementsModel.getRequisiteType(),
-            SubjectAdapter.fromModel(requirementsModel.getSubject()));
+      return new Requirements(requirementsModel.getRequisiteType());
    }
 
    public static List<Requirements> listFromModel(List<RequirementsModel> requirementsModels) {
@@ -19,7 +18,8 @@ public class RequirementsAdapter {
 
    public static RequirementsModel toModel(Requirements requirements) {
       return new RequirementsModel(requirements.getId(), requirements.getRequisiteType(),
-            SubjectAdapter.toModel(requirements.getSubject()));
+            requirements.getCourseSubject().getSubject().getCreditCode(),
+            requirements.getCourseSubject().getCourse().getCurriculumCode());
    }
 
    public static List<RequirementsModel> listToModel(List<Requirements> requirements) {
@@ -27,8 +27,8 @@ public class RequirementsAdapter {
    }
 
    public static RequirementsDTO toDTO(RequirementsModel requirements) {
-      return new RequirementsDTO(requirements.getId(), requirements.getRequisiteType(),
-            SubjectAdapter.toDTO(requirements.getSubject()));
+      return new RequirementsDTO(requirements.getId(), requirements.getRequisiteType(), requirements.getCreditCode(),
+            requirements.getCurriculumCode());
    }
 
    public static List<RequirementsDTO> listToDTO(List<RequirementsModel> requirements) {

@@ -29,9 +29,8 @@ public class Requirements {
    public Requirements() {
    }
 
-   public Requirements(RequisiteType requisiteType, CourseSubject courseSubject) {
+   public Requirements(RequisiteType requisiteType) {
       this.requisiteType = requisiteType;
-      this.courseSubject = courseSubject;
    }
 
    public long getId() {
