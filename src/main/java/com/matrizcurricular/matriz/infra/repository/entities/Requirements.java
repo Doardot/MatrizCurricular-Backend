@@ -26,6 +26,10 @@ public class Requirements {
    @JoinColumn(name = "subject_id", referencedColumnName = "subject_id", nullable = false)
    private CourseSubject courseSubject;
 
+   @ManyToOne
+   @JoinColumn(name = "required_id", referencedColumnName = "subject_id", nullable = false)
+   private CourseSubject preRequirement;
+
    public Requirements() {
    }
 
@@ -55,5 +59,13 @@ public class Requirements {
 
    public void setCourseSubject(CourseSubject courseSubject) {
       this.courseSubject = courseSubject;
+   }
+
+   public CourseSubject getPreRequirement() {
+      return preRequirement;
+   }
+
+   public void setPreRequirement(CourseSubject preRequirement) {
+      this.preRequirement = preRequirement;
    }
 }

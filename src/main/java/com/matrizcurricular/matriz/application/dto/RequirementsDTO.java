@@ -5,14 +5,19 @@ import com.matrizcurricular.matriz.domain.enums.RequisiteType;
 public class RequirementsDTO {
    private long id;
    private RequisiteType requisiteType;
-   private String creditCode;
-   private String curriculumCode;
+   private String courseSubjectCreditCode;
+   private String courseSubjectCurriculumCode;
+   private String preRequirementCreditCode;
+   private String preRequirementCurriculumCode;
 
-   public RequirementsDTO(long id, RequisiteType requisiteType, String creditCode, String curriculumCode) {
+   public RequirementsDTO(long id, RequisiteType requisiteType, String courseSubjectCreditCode,
+         String courseSubjectCurriculumCode, String preRequirementCreditCode, String preRequirementCurriculumCode) {
       this.id = id;
       this.requisiteType = requisiteType;
-      this.creditCode = creditCode;
-      this.curriculumCode = curriculumCode;
+      this.courseSubjectCreditCode = courseSubjectCreditCode;
+      this.courseSubjectCurriculumCode = courseSubjectCurriculumCode;
+      this.preRequirementCreditCode = preRequirementCreditCode;
+      this.preRequirementCurriculumCode = preRequirementCurriculumCode;
    }
 
    public long getId() {
@@ -31,20 +36,20 @@ public class RequirementsDTO {
       this.requisiteType = requisiteType;
    }
 
-   public String getCreditCode() {
-      return creditCode;
+   public String getCourseSubjectCreditCode() {
+      return courseSubjectCreditCode;
    }
 
-   public void setCreditCode(String creditCode) {
-      this.creditCode = creditCode;
+   public String getCourseSubjectCurriculumCode() {
+      return courseSubjectCurriculumCode;
    }
 
-   public String getCurriculumCode() {
-      return curriculumCode;
+   public String getPreRequirementCreditCode() {
+      return preRequirementCreditCode;
    }
 
-   public void setCurriculumCode(String curriculumCode) {
-      this.curriculumCode = curriculumCode;
+   public String getPreRequirementCurriculumCode() {
+      return preRequirementCurriculumCode;
    }
 
    public String toString() {
