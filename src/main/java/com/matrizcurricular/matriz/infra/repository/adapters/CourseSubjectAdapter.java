@@ -1,6 +1,6 @@
 package com.matrizcurricular.matriz.infra.repository.adapters;
 
-import com.matrizcurricular.matriz.application.dto.CourseSubjectDTO;
+import com.matrizcurricular.matriz.application.dto.response.CourseSubjectDTO;
 import com.matrizcurricular.matriz.domain.models.CourseSubjectModel;
 import com.matrizcurricular.matriz.infra.repository.entities.CourseSubject;
 

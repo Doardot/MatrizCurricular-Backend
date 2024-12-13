@@ -2,7 +2,7 @@ package com.matrizcurricular.matriz.infra.repository.adapters;
 
 import java.util.List;
 
-import com.matrizcurricular.matriz.application.dto.RequirementsDTO;
+import com.matrizcurricular.matriz.application.dto.response.RequirementsDTO;
 import com.matrizcurricular.matriz.domain.models.RequirementsModel;
 import com.matrizcurricular.matriz.infra.repository.entities.Requirements;
 
@@ -30,7 +30,7 @@ public class RequirementsAdapter {
 
    public static RequirementsDTO toDTO(RequirementsModel requirements) {
       return new RequirementsDTO(requirements.getId(), requirements.getRequisiteType(),
-            requirements.getCourseSubjectCreditCode(), requirements.getCourseSubjectCreditCode(),
+            requirements.getCourseSubjectCreditCode(), requirements.getCourseSubjectCurriculumCode(),
             requirements.getPreRequirementCreditCode(), requirements.getPreRequirementCurriculumCode());
    }
 

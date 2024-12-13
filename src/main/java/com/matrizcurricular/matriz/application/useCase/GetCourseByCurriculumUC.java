@@ -2,7 +2,7 @@ package com.matrizcurricular.matriz.application.useCase;
 
 import org.springframework.stereotype.Component;
 
-import com.matrizcurricular.matriz.application.dto.CourseDTO;
+import com.matrizcurricular.matriz.application.dto.response.CourseDTO;
 import com.matrizcurricular.matriz.domain.models.CourseModel;
 import com.matrizcurricular.matriz.domain.service.CourseService;
 

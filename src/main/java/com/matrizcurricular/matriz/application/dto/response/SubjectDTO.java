@@ -1,4 +1,4 @@
-package com.matrizcurricular.matriz.application.dto;
+package com.matrizcurricular.matriz.application.dto.response;
 
 public class SubjectDTO {
    private String creditCode;

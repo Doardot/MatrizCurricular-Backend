@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Component;
 
-import com.matrizcurricular.matriz.application.dto.CourseSubjectDTO;
+import com.matrizcurricular.matriz.application.dto.response.CourseSubjectDTO;
 import com.matrizcurricular.matriz.domain.service.CourseSubjectService;
 import com.matrizcurricular.matriz.infra.repository.adapters.CourseSubjectAdapter;
 
