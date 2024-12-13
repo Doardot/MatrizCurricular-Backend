@@ -1,3 +1,9 @@
+mysql -u root -p
+
+12345678
+
+USE matrizcurricular;
+
 INSERT INTO course (curriculum_code, name, number_semesters, extracurricular_hours)
 VALUES ('COU001', 'Computer Science', 8, 160);
 
@@ -6,3 +12,12 @@ VALUES ('SUB101', 'Mathematics', 5, 'Basic Math Course');
 
 INSERT INTO course_subject (course_id, subject_id, semester)
 VALUES ('COU001', 'SUB101', 1);
+
+INSERT INTO subject (credit_code, name, credits, description)
+VALUES ('SUB102', 'Algebra', 5, 'Algebra hard');
+
+INSERT INTO course_subject (course_id, subject_id, semester)
+VALUES ('COU001', 'SUB102', 2);
+
+INSERT INTO requirements (requisite_type, subject_id, required_id)
+VALUES (1, 'SUB101', 'SUB102'); 
