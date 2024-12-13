@@ -10,7 +10,7 @@ import jakarta.persistence.Table;
 public class Subject {
 
     @Id
-    @Column(name = "credit_code", nullable = false, length = 6)
+    @Column(name = "credit_code", nullable = false, length = 8)
     private String creditCode;
 
     @Column(name = "name", nullable = false)
