@@ -18,4 +18,9 @@ public class RequirementService {
     public List<RequirementsModel> getRequirementsByCourseSubject(String curriculumCode, String creditCode){
         return repository.getRequirementsByCourseSubject(curriculumCode, creditCode);
     }
+
+    public List<RequirementsModel> getInverseRequirementsByCourseSubject(String curriculumCode, String creditCode){
+        return repository.getInverseRequirementsByCourseSubject(curriculumCode, creditCode);
+    }
+
 }

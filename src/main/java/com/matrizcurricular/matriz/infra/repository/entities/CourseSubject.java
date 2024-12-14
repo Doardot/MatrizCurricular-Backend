@@ -36,6 +36,9 @@ public class CourseSubject {
    @OneToMany(mappedBy = "courseSubject")
    private List<Requirements> requirements;
 
+   @Column(name = "position_requirement", nullable = true)
+   private Integer positionRequirement;
+
    public CourseSubject() {
    }
 
@@ -77,4 +80,13 @@ public class CourseSubject {
    public void setRequirements(List<Requirements> requirements) {
       this.requirements = requirements;
    }
+
+    public Integer getPositionRequirement() {
+        return positionRequirement;
+    }
+
+    public void setPositionRequirement(Integer positionRequirement) {
+        this.positionRequirement = positionRequirement;
+    }
+
 }

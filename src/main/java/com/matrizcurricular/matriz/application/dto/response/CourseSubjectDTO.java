@@ -8,6 +8,7 @@ public class CourseSubjectDTO {
    private SubjectDTO subject;
    private int semester;
    private List<RequirementsDTO> requirements;
+   private Integer positionRequirement;
 
    public CourseSubjectDTO(CourseDTO course, SubjectDTO subject, int semester,
          List<RequirementsDTO> requirements) {
@@ -38,4 +39,12 @@ public class CourseSubjectDTO {
       return "CourseSubjectDTO - course = " + course + ", subject = " + subject + ", semester = "
             + semester + ", requirements = " + requirements;
    }
+
+    public Integer getPositionRequirement() {
+        return positionRequirement;
+    }
+
+    public void setPositionRequirement(Integer positionRequirement) {
+        this.positionRequirement = positionRequirement;
+    }
 }

@@ -82,27 +82,27 @@ INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98
 INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98904-04', 4);
 
 INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '46507-02', 5);
-INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '46510-04', 5);
+INSERT INTO course_subject (course_id, subject_id, semester, position_requirement) VALUES ('98AL', '46510-04', 5, 60);
 INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98700-04', 5);
 INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98708-04', 5);
 INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98905-04', 5);
 INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98906-04', 5);
 
-INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '1501A-04', 6);
-INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '4471V-02', 6);
+INSERT INTO course_subject (course_id, subject_id, semester, position_requirement) VALUES ('98AL', '1501A-04', 6, 60);
+INSERT INTO course_subject (course_id, subject_id, semester, position_requirement) VALUES ('98AL', '4471V-02', 6, 80);
 INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '46504-04', 6);
 INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98H00-04', 6);
 INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98709-04', 6);
 INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98710-02', 6);
 
-INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '13397-02', 7);
+INSERT INTO course_subject (course_id, subject_id, semester, position_requirement) VALUES ('98AL', '13397-02', 7, 80);
 INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '4471X-02', 7);
 INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '4611G-04', 7);
 INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '4636N-04', 7);
 INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '4646M-04', 7);
 INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '46524-04', 7);
 
-INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '11521-04', 8);
+INSERT INTO course_subject (course_id, subject_id, semester, position_requirement) VALUES ('98AL', '11521-04', 8, 60);
 INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '46517-02', 8);
 INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '46525-04', 8);
 INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '980P5-00', 8);

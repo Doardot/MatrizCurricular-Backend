@@ -25,5 +25,15 @@ public class RequirementsRepository implements IRequirementRepository {
             .filter(req -> req.getCourseSubject().getSubject().getCreditCode().equals(creditCode))
             .toList());
     }
+
+
+    @Override
+    public List<RequirementsModel> getInverseRequirementsByCourseSubject(String curriculumCode, String creditCode) {
+        return RequirementsAdapter.listToModel(requirementsRepository.findAll().stream()
+        .filter(req -> req.getPreRequirement().getCourse().getCurriculumCode().equals(curriculumCode))
+        .filter(req -> req.getPreRequirement().getSubject().getCreditCode().equals(creditCode))
+        .toList());
+    }
+    
     
 }

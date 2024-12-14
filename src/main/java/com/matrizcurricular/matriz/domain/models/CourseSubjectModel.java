@@ -7,13 +7,14 @@ public class CourseSubjectModel {
    private SubjectModel subject;
    private int semester;
    private List<RequirementsModel> requirements;
+   private Integer positionRequirement;
 
-   public CourseSubjectModel(CourseModel course, SubjectModel subject, int semester, List<RequirementsModel> requirements) {
-      this.course = course;
-      this.subject = subject;
-      this.semester = semester;
-      this.requirements = requirements;
-   }
+    public CourseSubjectModel(CourseModel course,SubjectModel subject, int semester, List<RequirementsModel> requirements) {
+        this.course = course;
+        this.requirements = requirements;
+        this.semester = semester;
+        this.subject = subject;
+    }
 
    public CourseModel getCourse() {
       return course;
@@ -46,4 +47,12 @@ public class CourseSubjectModel {
    public void setRequirements(List<RequirementsModel> requirements) {
       this.requirements = requirements;
    }
+
+    public Integer getPositionRequirement() {
+        return positionRequirement;
+    }
+
+    public void setPositionRequirement(Integer positionRequirement) {
+        this.positionRequirement = positionRequirement;
+    }
 }
