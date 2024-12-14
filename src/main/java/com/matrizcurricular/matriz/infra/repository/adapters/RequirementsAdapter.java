@@ -19,9 +19,9 @@ public class RequirementsAdapter {
    public static RequirementsModel toModel(Requirements requirements) {
       return new RequirementsModel(requirements.getId(), requirements.getRequisiteType(),
             requirements.getCourseSubject().getSubject().getCreditCode(),
-            requirements.getCourseSubject().getCourse().getCurriculumCode(),
+            requirements.getCourseSubject().getSubject().getName(),
             requirements.getPreRequirement().getSubject().getCreditCode(),
-            requirements.getPreRequirement().getCourse().getCurriculumCode());
+            requirements.getPreRequirement().getSubject().getName());
    }
 
    public static List<RequirementsModel> listToModel(List<Requirements> requirements) {
@@ -30,8 +30,8 @@ public class RequirementsAdapter {
 
    public static RequirementsDTO toDTO(RequirementsModel requirements) {
       return new RequirementsDTO(requirements.getId(), requirements.getRequisiteType(),
-            requirements.getCourseSubjectCreditCode(), requirements.getCourseSubjectCurriculumCode(),
-            requirements.getPreRequirementCreditCode(), requirements.getPreRequirementCurriculumCode());
+            requirements.getCourseSubjectCreditCode(), requirements.getCourseSubjectName(),
+            requirements.getPreRequirementCreditCode(), requirements.getPreRequirementName());
    }
 
    public static List<RequirementsDTO> listToDTO(List<RequirementsModel> requirements) {

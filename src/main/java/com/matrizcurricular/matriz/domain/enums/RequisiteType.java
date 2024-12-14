@@ -2,8 +2,8 @@ package com.matrizcurricular.matriz.domain.enums;
 
 public enum RequisiteType {
    PREREQUISITE(1),
-   COREQUISITE(2),
-   SPECIAL(3);
+   SPECIAL(2),
+   COREQUISTE(3);
 
    private final int value;
 

@@ -6,18 +6,18 @@ public class RequirementsModel {
    private long id;
    private RequisiteType requisiteType;
    private String courseSubjectCreditCode;
-   private String courseSubjectCurriculumCode;
+   private String courseSubjectName;
    private String preRequirementCreditCode;
-   private String preRequirementCurriculumCode;
+   private String preRequirementName;
 
    public RequirementsModel(long id, RequisiteType requisiteType, String courseSubjectCreditCode,
-         String courseSubjectCurriculumCode, String preRequirementCreditCode, String preRequirementCurriculumCode) {
+         String courseSubjectName, String preRequirementCreditCode, String preRequirementName) {
       this.id = id;
       this.requisiteType = requisiteType;
       this.courseSubjectCreditCode = courseSubjectCreditCode;
-      this.courseSubjectCurriculumCode = courseSubjectCurriculumCode;
+      this.courseSubjectName = courseSubjectName;
       this.preRequirementCreditCode = preRequirementCreditCode;
-      this.preRequirementCurriculumCode = preRequirementCurriculumCode;
+      this.preRequirementName = preRequirementName;
    }
 
    public long getId() {
@@ -44,12 +44,12 @@ public class RequirementsModel {
       this.courseSubjectCreditCode = courseSubjectCreditCode;
    }
 
-   public String getCourseSubjectCurriculumCode() {
-      return courseSubjectCurriculumCode;
+   public String getCourseSubjectName() {
+      return courseSubjectName;
    }
 
-   public void setCourseSubjectCurriculumCode(String courseSubjectCurriculumCode) {
-      this.courseSubjectCurriculumCode = courseSubjectCurriculumCode;
+   public void setCourseSubjectName(String courseSubjectName) {
+      this.courseSubjectName = courseSubjectName;
    }
 
    public String getPreRequirementCreditCode() {
@@ -60,12 +60,12 @@ public class RequirementsModel {
       this.preRequirementCreditCode = preRequirementCreditCode;
    }
 
-   public String getPreRequirementCurriculumCode() {
-      return preRequirementCurriculumCode;
+   public String getPreRequirementName() {
+      return preRequirementName;
    }
 
-   public void setPreRequirementCurriculumCode(String preRequirementCurriculumCode) {
-      this.preRequirementCurriculumCode = preRequirementCurriculumCode;
+   public void setPreRequirementName(String preRequirementName) {
+      this.preRequirementName = preRequirementName;
    }
 
 }

@@ -108,3 +108,45 @@ INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '46
 INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '980P5-00', 8);
 INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98715-04', 8);
 INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98907-02', 8);
+
+INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '95303-04', '4611E-04'); -- PREREQUISITE: Matemática Discreta para Lógica para Computação
+INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '4611C-06', '4611F-04'); -- PREREQUISITE: Fundamentos de Programação para Programação Orientada a Objetos
+INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '4611C-06', '4645G-04'); -- PREREQUISITE: Fundamentos de Programação para Algoritmos e Estruturas de Dados I
+INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '98900-02', '46506-04'); -- PREREQUISITE: Introdução à Engenharia de Software para Engenharia de Requisitos
+INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (1, '98705-02', '98800-04'); -- SPECIAL: Introdução à Computação para Fundamentos de Sistemas Computacionais
+INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '4645G-04', '4645H-04'); -- PREREQUISITE: Algoritmos e Estruturas de Dados I para Algoritmos e Estruturas de Dados II
+INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (1, '95303-04', '46515-04'); -- SPECIAL: Matemática Discreta para Linguagens, Autômatos e Computação
+INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (1, '98900-02', '46522-04'); -- SPECIAL: Introdução à Engenharia de Software para Prática na Ages I
+INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (1, '46509-02', '46522-04'); -- SPECIAL: Gerenciamento de Configuração de Software para Prática na Ages I
+INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '4611F-04', '46522-04'); -- PREREQUISITE: Programação Orientada a Objetos para Prática na Ages I
+INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (1, '4645G-04', '46526-02'); -- SPECIAL: Algoritmos e Estruturas de Dados I para Programação de Software Básico
+INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (1, '95300-04', '95304-04'); -- SPECIAL: Cálculo I para Probabilidade e Estatística
+INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '98901-04', '98902-02'); -- PREREQUISITE: Banco de Dados I para Banco de Dados II
+INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '4645H-04', '4646Z-04'); -- PREREQUISITE: Algoritmos e Estruturas de Dados II para Projeto e Otimização de Algoritmos
+INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '46515-04', '46514-04'); -- PREREQUISITE: Linguagens, Autômatos e Computação para Linguagens de Programação
+INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '46522-04', '46523-04'); -- PREREQUISITE: Prática na Ages I para Prática na Ages II
+INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '98901-04', '46523-04'); -- PREREQUISITE: Banco de Dados I para Prática na Ages II
+INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '46515-04', '98713-04'); -- PREREQUISITE: Linguagens, Autômatos e Computação para Fundamentos de Processamento Paralelo
+INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '4611F-04', '98713-04'); -- PREREQUISITE: Programação Orientada a Objetos para Fundamentos de Processamento Paralelo
+INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '46506-04', '98904-04'); -- PREREQUISITE: Engenharia de Requisitos para Verificação e Validação de Software
+INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '95304-04', '46507-02'); -- PREREQUISITE: Probabilidade e Estatística para Engenharia de Software Experimental
+INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '98800-04', '98700-04'); -- PREREQUISITE: Fundamentos de Sistemas Computacionais para Sistemas Operacionais
+INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '4611E-04', '98708-04'); -- PREREQUISITE: Lógica para Computação para Inteligência Artificial
+INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '4645H-04', '98708-04'); -- PREREQUISITE: Algoritmos e Estruturas de Dados II para Inteligência Artificial
+INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '46506-04', '98905-04'); -- PREREQUISITE: Engenharia de Requisitos para Experiência do Usuário
+INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '4646Z-04', '98906-04'); -- PREREQUISITE: Projeto e Otimização de Algoritmos para Projeto e Arquitetura de Software
+INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '98906-04', '46504-04'); -- PREREQUISITE: Projeto e Arquitetura de Software para Construção de Software
+INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '98902-02', '98H00-04'); -- PREREQUISITE: Banco de Dados II para Infraestrutura para Gestão de Dados
+INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '98700-04', '98709-04'); -- PREREQUISITE: Sistemas Operacionais para Fundamentos de Redes de Computadores
+INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (2, '98709-04', '98710-02'); -- COREQUISITE: Fundamentos de Redes de Computadores para Laboratório de Redes
+INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (1, '4471V-02', '4471X-02'); -- SPECIAL: Sistemas de Planejamento e Custos para Engenharia para Engenharia Econômica
+INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '95304-04', '4611G-04'); -- PREREQUISITE: Probabilidade e Estatística para Simulação e Métodos Analíticos
+INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '98902-02', '4636N-04'); -- PREREQUISITE: Banco de Dados II para Infraestrutura de TI
+INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '4611E-04', '4646M-04'); -- PREREQUISITE: Lógica para Computação para Métodos Formais
+INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '46504-04', '46524-04'); -- PREREQUISITE: Construção de Software para Prática na Ages III
+INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '46523-04', '46524-04'); -- PREREQUISITE: Prática na Ages II para Prática na Ages III
+INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (1, '98904-04', '46524-04'); -- SPECIAL: Verificação e Validação de Software para Prática na Ages III
+INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '98904-04', '46517-02'); -- PREREQUISITE: Verificação e Validação de Software para Melhoria de Processos
+INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '46524-04', '46525-04'); -- PREREQUISITE: Prática na Ages III para Prática na Ages IV
+INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '46510-04', '46525-04'); -- PREREQUISITE: Gerenciamento de Projetos para Prática na Ages IV
+INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '4646Z-04', '98715-04'); -- PREREQUISITE: Projeto e Otimização de Algoritmos para Segurança de Sistemas
