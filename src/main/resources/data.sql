@@ -1,3 +1,10 @@
+SET FOREIGN_KEY_CHECKS = 0;
+TRUNCATE TABLE requirements;
+TRUNCATE TABLE course_subject;
+TRUNCATE TABLE subject;
+TRUNCATE TABLE course;
+SET FOREIGN_KEY_CHECKS = 1;
+
 INSERT INTO course (curriculum_code, name, number_semesters, extracurricular_hours) values ('98AL', 'Engenharia de Software', 8, 120);
 
 INSERT INTO subject (credit_code, name, credits, description) VALUES ('254CF-02', 'Formação do Empreendedor', 2, 'Disciplina para fomentar o espírito empreendedor.');
