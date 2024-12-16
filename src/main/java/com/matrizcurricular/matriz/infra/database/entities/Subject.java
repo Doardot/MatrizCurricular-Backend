@@ -1,4 +1,4 @@
-package com.matrizcurricular.matriz.infra.repository.entities;
+package com.matrizcurricular.matriz.infra.database.entities;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

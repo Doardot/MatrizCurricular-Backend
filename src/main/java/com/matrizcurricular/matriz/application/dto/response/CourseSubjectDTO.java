@@ -3,26 +3,26 @@ package com.matrizcurricular.matriz.application.dto.response;
 import java.util.List;
 
 public class CourseSubjectDTO {
-   private CourseDTO course;
-   private SubjectDTO subject;
+   private String courseId;
+   private String subjectId;
    private int semester;
-   private List<RequirementsDTO> requirements;
    private Integer positionRequirement;
+   private List<RequirementsDTO> requirements;
 
-   public CourseSubjectDTO(CourseDTO course, SubjectDTO subject, int semester,
+   public CourseSubjectDTO(String courseId, String subjectId, int semester,
          List<RequirementsDTO> requirements) {
-      this.course = course;
-      this.subject = subject;
+      this.courseId = courseId;
+      this.subjectId = subjectId;
       this.semester = semester;
       this.requirements = requirements;
    }
 
-   public CourseDTO getCourse() {
-      return course;
+   public String getCourse() {
+      return courseId;
    }
 
-   public SubjectDTO getSubject() {
-      return subject;
+   public String getSubject() {
+      return subjectId;
    }
 
    public int getSemester() {
@@ -39,11 +39,5 @@ public class CourseSubjectDTO {
 
    public void setPositionRequirement(Integer positionRequirement) {
       this.positionRequirement = positionRequirement;
-   }
-
-   @Override
-   public String toString() {
-      return "CourseSubjectDTO - course = " + course + ", subject = " + subject + ", semester = "
-            + semester + ", requirements = " + requirements;
    }
 }

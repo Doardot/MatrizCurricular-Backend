@@ -1,3 +1,4 @@
+package com.matrizcurricular.matriz.infra.database.interfaceJPA;
 // package com.matrizcurricular.matriz.infra.repository.interfaceJPA;
 
 // import org.springframework.data.jpa.repository.JpaRepository;

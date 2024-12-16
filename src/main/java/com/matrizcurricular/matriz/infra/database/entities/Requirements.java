@@ -1,4 +1,4 @@
-package com.matrizcurricular.matriz.infra.repository.entities;
+package com.matrizcurricular.matriz.infra.database.entities;
 
 import com.matrizcurricular.matriz.domain.enums.RequisiteType;
 

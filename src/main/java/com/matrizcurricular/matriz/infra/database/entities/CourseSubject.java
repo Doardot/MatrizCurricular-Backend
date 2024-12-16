@@ -1,4 +1,4 @@
-package com.matrizcurricular.matriz.infra.repository.entities;
+package com.matrizcurricular.matriz.infra.database.entities;
 
 import java.util.List;
 
@@ -88,5 +88,4 @@ public class CourseSubject {
     public void setPositionRequirement(Integer positionRequirement) {
         this.positionRequirement = positionRequirement;
     }
-
 }

@@ -2,7 +2,7 @@ package com.matrizcurricular.matriz.infra.adapters;
 
 import com.matrizcurricular.matriz.application.dto.response.CourseDTO;
 import com.matrizcurricular.matriz.domain.models.CourseModel;
-import com.matrizcurricular.matriz.infra.repository.entities.Course;
+import com.matrizcurricular.matriz.infra.database.entities.Course;
 
 public class CourseAdapter {
    public static Course fromModel(CourseModel courseModel) {

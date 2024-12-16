@@ -2,7 +2,7 @@ package com.matrizcurricular.matriz.infra.adapters;
 
 import com.matrizcurricular.matriz.application.dto.response.SubjectDTO;
 import com.matrizcurricular.matriz.domain.models.SubjectModel;
-import com.matrizcurricular.matriz.infra.repository.entities.Subject;
+import com.matrizcurricular.matriz.infra.database.entities.Subject;
 
 public class SubjectAdapter {
    public static Subject fromModel(SubjectModel subjectModel) {

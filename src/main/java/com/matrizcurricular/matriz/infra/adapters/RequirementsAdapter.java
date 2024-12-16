@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.matrizcurricular.matriz.application.dto.response.RequirementsDTO;
 import com.matrizcurricular.matriz.domain.models.RequirementsModel;
-import com.matrizcurricular.matriz.infra.repository.entities.Requirements;
+import com.matrizcurricular.matriz.infra.database.entities.Requirements;
 
 public class RequirementsAdapter {
 

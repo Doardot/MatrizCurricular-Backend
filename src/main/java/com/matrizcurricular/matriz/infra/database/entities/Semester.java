@@ -1,3 +1,4 @@
+package com.matrizcurricular.matriz.infra.database.entities;
 // package com.matrizcurricular.matriz.infra.repository.entities;
 
 

@@ -4,9 +4,10 @@ import java.util.List;
 
 import com.matrizcurricular.matriz.application.dto.response.CourseSubjectDTO;
 import com.matrizcurricular.matriz.domain.models.CourseSubjectModel;
-import com.matrizcurricular.matriz.infra.repository.entities.CourseSubject;
+import com.matrizcurricular.matriz.infra.database.entities.CourseSubject;
 
 public class CourseSubjectAdapter {
+
    public static CourseSubject fromModel(CourseSubjectModel courseSubjectModel) {
       CourseSubject courseSubject = new CourseSubject(CourseAdapter.fromModel(courseSubjectModel.getCourse()),
             SubjectAdapter.fromModel(courseSubjectModel.getSubject()),
@@ -37,8 +38,9 @@ public class CourseSubjectAdapter {
    }
 
    public static CourseSubjectDTO toDTO(CourseSubjectModel courseSubject) {
-      CourseSubjectDTO courseSubjectDTO = new CourseSubjectDTO(CourseAdapter.toDTO(courseSubject.getCourse()),
-            SubjectAdapter.toDTO(courseSubject.getSubject()), courseSubject.getSemester(),
+      CourseSubjectDTO courseSubjectDTO = new CourseSubjectDTO(
+            courseSubject.getCourse().getCurriculumCode(),
+            courseSubject.getSubject().getCreditCode(), courseSubject.getSemester(),
             RequirementsAdapter.listToDTO(courseSubject.getRequirements()));
       if (courseSubject.getPositionRequirement() != null) {
          courseSubjectDTO.setPositionRequirement(courseSubject.getPositionRequirement());

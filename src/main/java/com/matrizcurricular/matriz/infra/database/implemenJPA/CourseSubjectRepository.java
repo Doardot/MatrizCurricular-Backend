@@ -1,4 +1,4 @@
-package com.matrizcurricular.matriz.infra.repository.implemenJPA;
+package com.matrizcurricular.matriz.infra.database.implemenJPA;
 
 import java.util.List;
 
@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 import com.matrizcurricular.matriz.domain.interfaceRepository.ICourseSubjectRepository;
 import com.matrizcurricular.matriz.domain.models.CourseSubjectModel;
 import com.matrizcurricular.matriz.infra.adapters.CourseSubjectAdapter;
-import com.matrizcurricular.matriz.infra.repository.interfaceJPA.CourseSubjectJPA;
+import com.matrizcurricular.matriz.infra.database.interfaceJPA.CourseSubjectJPA;
 
 @Repository
 public class CourseSubjectRepository implements ICourseSubjectRepository {
