@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 
 import com.matrizcurricular.matriz.domain.interfaceRepository.IRequirementRepository;
 import com.matrizcurricular.matriz.domain.models.RequirementsModel;
-import com.matrizcurricular.matriz.infra.repository.adapters.RequirementsAdapter;
+import com.matrizcurricular.matriz.infra.adapters.RequirementsAdapter;
 import com.matrizcurricular.matriz.infra.repository.interfaceJPA.RequirementJPA;
 
 @Repository

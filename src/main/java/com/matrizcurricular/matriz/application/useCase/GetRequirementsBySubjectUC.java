@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 import com.matrizcurricular.matriz.application.dto.response.RequirementsDTO;
 import com.matrizcurricular.matriz.domain.service.RequirementService;
-import com.matrizcurricular.matriz.infra.repository.adapters.RequirementsAdapter;
+import com.matrizcurricular.matriz.infra.adapters.RequirementsAdapter;
 
 @Component
 public class GetRequirementsBySubjectUC {

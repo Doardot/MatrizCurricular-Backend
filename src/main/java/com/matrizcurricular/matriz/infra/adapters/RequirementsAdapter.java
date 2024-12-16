@@ -1,4 +1,4 @@
-package com.matrizcurricular.matriz.infra.repository.adapters;
+package com.matrizcurricular.matriz.infra.adapters;
 
 import java.util.List;
 

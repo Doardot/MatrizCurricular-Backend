@@ -21,5 +21,4 @@ public class RequestRequirementDTO {
     public String toString() {
         return "RequestRequirementDTO - creditCode = " + creditCode + ", curriculumCode = " + curriculumCode;
     }
-    
 }

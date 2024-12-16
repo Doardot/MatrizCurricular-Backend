@@ -4,7 +4,7 @@ import org.springframework.stereotype.Repository;
 
 import com.matrizcurricular.matriz.domain.interfaceRepository.ICourseRepository;
 import com.matrizcurricular.matriz.domain.models.CourseModel;
-import com.matrizcurricular.matriz.infra.repository.adapters.CourseAdapter;
+import com.matrizcurricular.matriz.infra.adapters.CourseAdapter;
 import com.matrizcurricular.matriz.infra.repository.interfaceJPA.CourseJPA;
 
 @Repository

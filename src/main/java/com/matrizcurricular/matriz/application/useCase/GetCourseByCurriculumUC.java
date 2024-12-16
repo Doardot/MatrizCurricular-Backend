@@ -4,7 +4,7 @@ import org.springframework.stereotype.Component;
 
 import com.matrizcurricular.matriz.application.dto.response.CourseDTO;
 import com.matrizcurricular.matriz.domain.service.CourseService;
-import com.matrizcurricular.matriz.infra.repository.adapters.CourseAdapter;
+import com.matrizcurricular.matriz.infra.adapters.CourseAdapter;
 
 @Component
 public class GetCourseByCurriculumUC {
