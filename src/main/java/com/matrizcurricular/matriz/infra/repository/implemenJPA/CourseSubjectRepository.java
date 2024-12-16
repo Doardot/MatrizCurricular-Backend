@@ -19,9 +19,8 @@ public class CourseSubjectRepository implements ICourseSubjectRepository {
 
    @Override
    public List<CourseSubjectModel> getCourseSubjectByCourse(String curriculumCode) {
-      return courseSubjectRepository.findAll().stream()
-            .filter(cs -> cs.getCourse().getCurriculumCode().equals(curriculumCode))
-            .map(cs -> CourseSubjectAdapter.toModel(cs)).toList();
+      return CourseSubjectAdapter.listToModel(courseSubjectRepository.findAll().stream()
+            .filter(cs -> cs.getCourse().getCurriculumCode().equals(curriculumCode)).toList());
    }
 
 }

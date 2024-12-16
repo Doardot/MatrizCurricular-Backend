@@ -17,7 +17,6 @@ public class GetCourseSubByCourseUC {
    }
 
    public List<CourseSubjectDTO> run(String curriculumCode) {
-      return courseService.getCourseSubjectByCourse(curriculumCode).stream().map(cs -> CourseSubjectAdapter.toDTO(cs))
-            .toList();
+      return CourseSubjectAdapter.listToDTO(courseService.getCourseSubjectByCourse(curriculumCode));
    }
 }

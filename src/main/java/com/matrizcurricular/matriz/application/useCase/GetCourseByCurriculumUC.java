@@ -3,8 +3,8 @@ package com.matrizcurricular.matriz.application.useCase;
 import org.springframework.stereotype.Component;
 
 import com.matrizcurricular.matriz.application.dto.response.CourseDTO;
-import com.matrizcurricular.matriz.domain.models.CourseModel;
 import com.matrizcurricular.matriz.domain.service.CourseService;
+import com.matrizcurricular.matriz.infra.repository.adapters.CourseAdapter;
 
 @Component
 public class GetCourseByCurriculumUC {
@@ -15,8 +15,7 @@ public class GetCourseByCurriculumUC {
    }
 
    public CourseDTO run(String curriculum) {
-      CourseModel course = courseService.getCourseByCurriculum(curriculum);
-      return new CourseDTO(course.getCurriculumCode(), course.getName(), course.getNumberSemesters(),
-            course.getExtracurricularHours());
+      
+      return CourseAdapter.toDTO(courseService.getCourseByCurriculum(curriculum));
    }
 }
