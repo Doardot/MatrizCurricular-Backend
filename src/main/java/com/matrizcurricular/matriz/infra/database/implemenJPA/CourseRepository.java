@@ -1,5 +1,7 @@
 package com.matrizcurricular.matriz.infra.database.implemenJPA;
 
+import java.util.List;
+
 import org.springframework.stereotype.Repository;
 
 import com.matrizcurricular.matriz.domain.interfaceRepository.ICourseRepository;
@@ -18,5 +20,10 @@ public class CourseRepository implements ICourseRepository {
    @Override
    public CourseModel getCourseByCurriculum(String curriculum) {
       return CourseAdapter.toModel(courseRepository.findById(curriculum).get());
+   }
+
+   @Override
+   public List<CourseModel> getAllCourses() {
+      return CourseAdapter.listToModel(courseRepository.findAll());
    }
 }

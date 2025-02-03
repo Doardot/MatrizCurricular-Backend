@@ -1,5 +1,7 @@
 package com.matrizcurricular.matriz.application.useCase;
 
+import java.util.List;
+
 import org.springframework.stereotype.Component;
 
 import com.matrizcurricular.matriz.application.dto.response.CourseDTO;
@@ -7,14 +9,14 @@ import com.matrizcurricular.matriz.domain.service.CourseService;
 import com.matrizcurricular.matriz.infra.adapters.CourseAdapter;
 
 @Component
-public class GetCourseByCurriculumUC {
+public class GetAllCoursesUC {
    private CourseService courseService;
 
-   public GetCourseByCurriculumUC(CourseService courseService) {
+   public GetAllCoursesUC(CourseService courseService) {
       this.courseService = courseService;
    }
 
-   public CourseDTO run(String curriculum) {
-      return CourseAdapter.toDTO(courseService.getCourseByCurriculum(curriculum));
+   public List<CourseDTO> run() {
+      return CourseAdapter.listToDTO(courseService.getAllCourses());
    }
 }

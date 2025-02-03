@@ -6,6 +6,8 @@ TRUNCATE TABLE course;
 SET FOREIGN_KEY_CHECKS = 1;
 
 INSERT INTO course (curriculum_code, name, number_semesters, extracurricular_hours) values ('98AL', 'Engenharia de Software', 8, 120);
+INSERT INTO course (curriculum_code, name, number_semesters, extracurricular_hours) values ('98AJ', 'Ciência da Computação', 8, 120);
+INSERT INTO course (curriculum_code, name, number_semesters, extracurricular_hours) values ('98AH', 'Ciência de Dados e IA', 8, 120);
 
 INSERT INTO subject (credit_code, name, credits, description) VALUES ('254CF-02', 'Formação do Empreendedor', 2, 'Disciplina para fomentar o espírito empreendedor.');
 INSERT INTO subject (credit_code, name, credits, description) VALUES ('4611C-06', 'Fundamentos de Programação', 6, 'Introdução à lógica e algoritmos.');
