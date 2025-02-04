@@ -20,7 +20,6 @@ INSERT INTO subject (credit_code, name, credits, description) VALUES ('4611F-04'
 INSERT INTO subject (credit_code, name, credits, description) VALUES ('4645G-04', 'Algoritmos e Estruturas de Dados I', 4, 'Introdução a estruturas de dados.');
 INSERT INTO subject (credit_code, name, credits, description) VALUES ('46506-04', 'Engenharia de Requisitos', 4, 'Técnicas e práticas de levantamento de requisitos.');
 INSERT INTO subject (credit_code, name, credits, description) VALUES ('46509-02', 'Gerenciamento de Config. de Software', 2, 'Controle de versões e gerenciamento de mudanças.');
-INSERT INTO subject (credit_code, name, credits, description) VALUES ('980EA-24', 'Disciplinas Eletivas', 24, 'Disciplinas optativas para diversificação do conhecimento.');
 INSERT INTO subject (credit_code, name, credits, description) VALUES ('98800-04', 'Fundamentos de Sistemas Computacionais', 4, 'Bases de arquitetura de computadores.');
 INSERT INTO subject (credit_code, name, credits, description) VALUES ('98901-04', 'Banco de Dados I', 4, 'Conceitos básicos de bancos de dados.');
 INSERT INTO subject (credit_code, name, credits, description) VALUES ('4645H-04', 'Algoritmos e Estruturas de Dados II', 4, 'Continuação do estudo de estruturas de dados.');
@@ -56,7 +55,6 @@ INSERT INTO subject (credit_code, name, credits, description) VALUES ('46524-04'
 INSERT INTO subject (credit_code, name, credits, description) VALUES ('11521-04', 'Humanismo e Cultura Religiosa', 4, 'Estudo de valores humanos e religião.');
 INSERT INTO subject (credit_code, name, credits, description) VALUES ('46517-02', 'Melhoria de Processos de Software', 2, 'Otimização de processos no desenvolvimento de software.');
 INSERT INTO subject (credit_code, name, credits, description) VALUES ('46525-04', 'Prática na Ages IV (120h)', 4, 'Conclusão do projeto interdisciplinar.');
-INSERT INTO subject (credit_code, name, credits, description) VALUES ('980P5-00', 'Atividades Complementares (120h)', 0, 'Atividades extracurriculares obrigatórias.');
 INSERT INTO subject (credit_code, name, credits, description) VALUES ('98715-04', 'Segurança de Sistemas', 4, 'Segurança e proteção de sistemas computacionais.');
 INSERT INTO subject (credit_code, name, credits, description) VALUES ('98907-02', 'Engenharia e Gestão do Conhecimento', 2, 'Gestão de informações e conhecimento em engenharia.');
 
@@ -72,7 +70,6 @@ INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '46
 INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '4645G-04', 2);
 INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '46506-04', 2);
 INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '46509-02', 2);
-INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '980EA-24', 2);
 INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98800-04', 2);
 INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98901-04', 2);
 
@@ -114,7 +111,6 @@ INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '46
 INSERT INTO course_subject (course_id, subject_id, semester, position_requirement) VALUES ('98AL', '11521-04', 8, 60);
 INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '46517-02', 8);
 INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '46525-04', 8);
-INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '980P5-00', 8);
 INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98715-04', 8);
 INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98907-02', 8);
 

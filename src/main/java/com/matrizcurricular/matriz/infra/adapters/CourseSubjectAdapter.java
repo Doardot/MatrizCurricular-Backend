@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.matrizcurricular.matriz.application.dto.response.CourseSubjectDTO;
 import com.matrizcurricular.matriz.domain.models.CourseSubjectModel;
+import com.matrizcurricular.matriz.domain.models.RequirementsModel;
 import com.matrizcurricular.matriz.infra.database.entities.CourseSubject;
 
 public class CourseSubjectAdapter {
@@ -37,18 +38,15 @@ public class CourseSubjectAdapter {
       return courseSubjects.stream().map(cs -> toModel(cs)).toList();
    }
 
-   public static CourseSubjectDTO toDTO(CourseSubjectModel courseSubject) {
+   public static CourseSubjectDTO toDTO(CourseSubjectModel courseSubject, List<RequirementsModel> requirements,
+         List<RequirementsModel> inverseRequirements) {
       CourseSubjectDTO courseSubjectDTO = new CourseSubjectDTO(
-            courseSubject.getCourse().getCurriculumCode(),
-            courseSubject.getSubject().getCreditCode(), courseSubject.getSemester(),
-            RequirementsAdapter.listToDTO(courseSubject.getRequirements()));
+            courseSubject.getSubject().getCreditCode(), courseSubject.getSubject().getName(),
+            courseSubject.getSemester(), RequirementsAdapter.listToDTO(requirements),
+            RequirementsAdapter.listToDTO(inverseRequirements), courseSubject.getSubject().getDescription());
       if (courseSubject.getPositionRequirement() != null) {
          courseSubjectDTO.setPositionRequirement(courseSubject.getPositionRequirement());
       }
       return courseSubjectDTO;
-   }
-
-   public static List<CourseSubjectDTO> listToDTO(List<CourseSubjectModel> courseSubjects) {
-      return courseSubjects.stream().map(cs -> toDTO(cs)).toList();
    }
 }
