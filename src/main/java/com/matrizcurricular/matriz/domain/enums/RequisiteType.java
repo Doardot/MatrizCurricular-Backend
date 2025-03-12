@@ -3,7 +3,7 @@ package com.matrizcurricular.matriz.domain.enums;
 public enum RequisiteType {
    PREREQUISITE(1),
    SPECIAL(2),
-   COREQUISTE(3);
+   COREQUISITE(3);
 
    private final int value;
 
