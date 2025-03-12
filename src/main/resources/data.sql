@@ -57,103 +57,109 @@ INSERT INTO subject (credit_code, name, credits, description) VALUES ('98907-02'
 INSERT INTO subject (credit_code, name, credits, description) VALUES ('46517-02', 'Melhoria de Processos de Software', 2, 'Fundamentação de melhoria e avaliação de processo de software. Estudo sobre qualidade de serviço. Definição de métricas de software. Uso de ferramentas de processo de software. Definição e avaliação de processos de software.');
 INSERT INTO subject (credit_code, name, credits, description) VALUES ('46525-04', 'Prática na Agência Experimental IV (120h)', 4, 'Realização de atividades integradoras de capacitação e qualificação na Agência Experimental de Engenharia de Software. Aprofundamento de habilidades e competências em Engenharia de Software por meio de atuação em projetos de desenvolvimento de software. Estabelecimento de relações entre o conhecimento teórico e a aplicação prática da Engenharia de Software.');
 
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '254CF-02', 1);
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '4611C-06', 1);
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '95300-04', 1);
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '95303-04', 1);
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98705-02', 1);
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98900-02', 1);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '254CF-02', 1);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '4611C-06', 1);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '95300-04', 1);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '95303-04', 1);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98705-02', 1);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98900-02', 1);
 
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '4611E-04', 2);
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '4611F-04', 2);
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '4645G-04', 2);
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '46506-04', 2);
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '46509-02', 2);
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98800-04', 2);
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98901-04', 2);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '4611E-04', 2);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '4611F-04', 2);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '4645G-04', 2);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '46506-04', 2);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '46509-02', 2);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98800-04', 2);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98901-04', 2);
 
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '4645H-04', 3);
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '46515-04', 3);
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '46522-04', 3);
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '46526-02', 3);
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '95304-04', 3);
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98902-02', 3);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '4645H-04', 3);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '46515-04', 3);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '46522-04', 3);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '46526-02', 3);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '95304-04', 3);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98902-02', 3);
 
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '4646Z-04', 4);
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '46514-04', 4);
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '46523-04', 4);
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98713-04', 4);
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98903-02', 4);
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98904-04', 4);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '4646Z-04', 4);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '46514-04', 4);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '46523-04', 4);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98713-04', 4);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98903-02', 4);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98904-04', 4);
 
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '46507-02', 5);
--- INSERT INTO course_subject (course_id, subject_id, semester, position_requirement) VALUES ('98AL', '46510-04', 5, 60);
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98700-04', 5);
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98708-04', 5);
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98905-04', 5);
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98906-04', 5);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '46507-02', 5);
+INSERT INTO course_subject (course_id, subject_id, semester, position_requirement) VALUES ('98AL', '46510-04', 5, 60);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98700-04', 5);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98708-04', 5);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98905-04', 5);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98906-04', 5);
 
--- INSERT INTO course_subject (course_id, subject_id, semester, position_requirement) VALUES ('98AL', '1501A-04', 6, 60);
--- INSERT INTO course_subject (course_id, subject_id, semester, position_requirement) VALUES ('98AL', '4471V-02', 6, 80);
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '46504-04', 6);
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98H00-04', 6);
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98709-04', 6);
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98710-02', 6);
+INSERT INTO course_subject (course_id, subject_id, semester, position_requirement) VALUES ('98AL', '1501A-04', 6, 60);
+INSERT INTO course_subject (course_id, subject_id, semester, position_requirement) VALUES ('98AL', '4471V-02', 6, 80);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '46504-04', 6);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98H00-04', 6);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98709-04', 6);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98710-02', 6);
 
--- INSERT INTO course_subject (course_id, subject_id, semester, position_requirement) VALUES ('98AL', '13397-02', 7, 80);
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '4471X-02', 7);
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '4611G-04', 7);
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '4636N-04', 7);
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '4646M-04', 7);
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '46524-04', 7);
+INSERT INTO course_subject (course_id, subject_id, semester, position_requirement) VALUES ('98AL', '13397-02', 7, 80);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '4471X-02', 7);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '4611G-04', 7);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '4636N-04', 7);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '4646M-04', 7);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '46524-04', 7);
 
--- INSERT INTO course_subject (course_id, subject_id, semester, position_requirement) VALUES ('98AL', '11521-04', 8, 60);
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '46517-02', 8);
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '46525-04', 8);
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98715-04', 8);
--- INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98907-02', 8);
+INSERT INTO course_subject (course_id, subject_id, semester, position_requirement) VALUES ('98AL', '11521-04', 8, 60);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '46517-02', 8);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '46525-04', 8);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98715-04', 8);
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AL', '98907-02', 8);
 
--- INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '95303-04', '4611E-04'); -- PREREQUISITE: Matemática Discreta para Lógica para Computação
--- INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '4611C-06', '4611F-04'); -- PREREQUISITE: Fundamentos de Programação para Programação Orientada a Objetos
--- INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '4611C-06', '4645G-04'); -- PREREQUISITE: Fundamentos de Programação para Algoritmos e Estruturas de Dados I
--- INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '98900-02', '46506-04'); -- PREREQUISITE: Introdução à Engenharia de Software para Engenharia de Requisitos
--- INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (1, '98705-02', '98800-04'); -- SPECIAL: Introdução à Computação para Fundamentos de Sistemas Computacionais
--- INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '4645G-04', '4645H-04'); -- PREREQUISITE: Algoritmos e Estruturas de Dados I para Algoritmos e Estruturas de Dados II
--- INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (1, '95303-04', '46515-04'); -- SPECIAL: Matemática Discreta para Linguagens, Autômatos e Computação
--- INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (1, '98900-02', '46522-04'); -- SPECIAL: Introdução à Engenharia de Software para Prática na Ages I
--- INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (1, '46509-02', '46522-04'); -- SPECIAL: Gerenciamento de Configuração de Software para Prática na Ages I
--- INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '4611F-04', '46522-04'); -- PREREQUISITE: Programação Orientada a Objetos para Prática na Ages I
--- INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (1, '4645G-04', '46526-02'); -- SPECIAL: Algoritmos e Estruturas de Dados I para Programação de Software Básico
--- INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (1, '95300-04', '95304-04'); -- SPECIAL: Cálculo I para Probabilidade e Estatística
--- INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '98901-04', '98902-02'); -- PREREQUISITE: Banco de Dados I para Banco de Dados II
--- INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '4645H-04', '4646Z-04'); -- PREREQUISITE: Algoritmos e Estruturas de Dados II para Projeto e Otimização de Algoritmos
--- INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '46515-04', '46514-04'); -- PREREQUISITE: Linguagens, Autômatos e Computação para Linguagens de Programação
--- INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '46522-04', '46523-04'); -- PREREQUISITE: Prática na Ages I para Prática na Ages II
--- INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '98901-04', '46523-04'); -- PREREQUISITE: Banco de Dados I para Prática na Ages II
--- INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '46515-04', '98713-04'); -- PREREQUISITE: Linguagens, Autômatos e Computação para Fundamentos de Processamento Paralelo
--- INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '4611F-04', '98713-04'); -- PREREQUISITE: Programação Orientada a Objetos para Fundamentos de Processamento Paralelo
--- INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '46506-04', '98904-04'); -- PREREQUISITE: Engenharia de Requisitos para Verificação e Validação de Software
--- INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '95304-04', '46507-02'); -- PREREQUISITE: Probabilidade e Estatística para Engenharia de Software Experimental
--- INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '98800-04', '98700-04'); -- PREREQUISITE: Fundamentos de Sistemas Computacionais para Sistemas Operacionais
--- INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '4611E-04', '98708-04'); -- PREREQUISITE: Lógica para Computação para Inteligência Artificial
--- INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '4645H-04', '98708-04'); -- PREREQUISITE: Algoritmos e Estruturas de Dados II para Inteligência Artificial
--- INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '46506-04', '98905-04'); -- PREREQUISITE: Engenharia de Requisitos para Experiência do Usuário
--- INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '4646Z-04', '98906-04'); -- PREREQUISITE: Projeto e Otimização de Algoritmos para Projeto e Arquitetura de Software
--- INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '98906-04', '46504-04'); -- PREREQUISITE: Projeto e Arquitetura de Software para Construção de Software
--- INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '98902-02', '98H00-04'); -- PREREQUISITE: Banco de Dados II para Infraestrutura para Gestão de Dados
--- INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '98700-04', '98709-04'); -- PREREQUISITE: Sistemas Operacionais para Fundamentos de Redes de Computadores
--- INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (2, '98709-04', '98710-02'); -- COREQUISITE: Fundamentos de Redes de Computadores para Laboratório de Redes
--- INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (1, '4471V-02', '4471X-02'); -- SPECIAL: Sistemas de Planejamento e Custos para Engenharia para Engenharia Econômica
--- INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '95304-04', '4611G-04'); -- PREREQUISITE: Probabilidade e Estatística para Simulação e Métodos Analíticos
--- INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '98902-02', '4636N-04'); -- PREREQUISITE: Banco de Dados II para Infraestrutura de TI
--- INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '4611E-04', '4646M-04'); -- PREREQUISITE: Lógica para Computação para Métodos Formais
--- INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '46504-04', '46524-04'); -- PREREQUISITE: Construção de Software para Prática na Ages III
--- INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '46523-04', '46524-04'); -- PREREQUISITE: Prática na Ages II para Prática na Ages III
--- INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (1, '98904-04', '46524-04'); -- SPECIAL: Verificação e Validação de Software para Prática na Ages III
--- INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '98904-04', '46517-02'); -- PREREQUISITE: Verificação e Validação de Software para Melhoria de Processos
--- INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '46524-04', '46525-04'); -- PREREQUISITE: Prática na Ages III para Prática na Ages IV
--- INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '46510-04', '46525-04'); -- PREREQUISITE: Gerenciamento de Projetos para Prática na Ages IV
--- INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '4646Z-04', '98715-04'); -- PREREQUISITE: Projeto e Otimização de Algoritmos para Segurança de Sistemas
+-- Exemplo de INSERT
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id)
+VALUES (0, '98AL', '4611E-04', '98AL', '95303-04');
+
+-- Todos os INSERTs corrigidos
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AL', '4611E-04', '98AL', '95303-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AL', '4611F-04', '98AL', '4611C-06');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AL', '4645G-04', '98AL', '4611C-06');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AL', '46506-04', '98AL', '98900-02');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (1, '98AL', '98800-04', '98AL', '98705-02');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AL', '4645H-04', '98AL', '4645G-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (1, '98AL', '46515-04', '98AL', '95303-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (1, '98AL', '46522-04', '98AL', '98900-02');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (1, '98AL', '46522-04', '98AL', '46509-02');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AL', '46522-04', '98AL', '4611F-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (1, '98AL', '46526-02', '98AL', '4645G-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (1, '98AL', '95304-04', '98AL', '95300-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AL', '98902-02', '98AL', '98901-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AL', '4646Z-04', '98AL', '4645H-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AL', '46514-04', '98AL', '46515-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AL', '46523-04', '98AL', '46522-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AL', '46523-04', '98AL', '98901-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AL', '98713-04', '98AL', '46515-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AL', '98713-04', '98AL', '4611F-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AL', '98904-04', '98AL', '46506-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AL', '46507-02', '98AL', '95304-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AL', '98700-04', '98AL', '98800-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AL', '98708-04', '98AL', '4611E-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AL', '98708-04', '98AL', '4645H-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AL', '98905-04', '98AL', '46506-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AL', '98906-04', '98AL', '4611F-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AL', '46504-04', '98AL', '98906-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AL', '98H00-04', '98AL', '98902-02');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AL', '98709-04', '98AL', '98700-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (2, '98AL', '98710-02', '98AL', '98709-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (1, '98AL', '4471X-02', '98AL', '4471V-02');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AL', '4611G-04', '98AL', '95304-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AL', '4636N-04', '98AL', '98902-02');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AL', '4646M-04', '98AL', '4611E-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AL', '46524-04', '98AL', '46504-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AL', '46524-04', '98AL', '46523-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (1, '98AL', '46524-04', '98AL', '98904-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AL', '46517-02', '98AL', '98904-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AL', '46525-04', '98AL', '46524-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AL', '46525-04', '98AL', '46510-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AL', '98715-04', '98AL', '4646Z-04');
+
 
 
 
@@ -240,46 +246,52 @@ INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AJ', '98
 INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AJ', '4647B-04', 8);
 INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AJ', '98714-02', 8);
 
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '95300-04', '95301-04');
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (1, '98705-02', '4646B-04');
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '95303-04', '4611E-04');
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '4611C-06', '4611F-04');
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '4645G-04', '4645H-04');
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '98901-04', '98902-02');
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (1, '95303-04', '46515-04');
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '4646B-04', '98G03-04');
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (1, '95301-04', '95304-04');
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '4646B-04', '98701-04');
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '4611C-06', '98701-04');
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (2, '4645H-04', '98702-04');
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '98701-04', '98716-04');
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (2, '4636H-04', '98801-04');
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '4611F-04', '4636H-04');
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '4611F-04', '98713-04');
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '46515-04', '98713-04');
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '98902-02', '98H00-04');
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (1, '4611E-04', '98703-02');
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '98801-04', '98802-02');
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '98801-04', '98905-04');
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '95302-04', '4646N-04');
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (1, '95301-04', '4646N-04');
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '98716-04', '4646X-04');
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '4645H-04', '4646Z-04');
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (1, '98G03-04', '98700-04');
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (1, '98713-04', '98700-04');
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (1, '46515-04', '4647F-04');
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '98700-04', '98709-04');
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '4611E-04', '98708-04');
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (2, '98709-04', '98710-02');
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '98700-04', '4646I-04');
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '4611E-04', '4646M-04');
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (1, '98802-02', '98704-04');
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '98708-04', '98706-04');
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (1, '46515-04', '4645K-04');
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (1, '98G03-04', '4645K-04');
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '98709-04', '4647A-04');
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '95304-04', '4611G-04');
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (1, '4646I-04', '4645J-04');
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '4646Z-04', '98715-04');
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (1, '98709-04', '4647B-04');
-INSERT INTO requirements (requisite_type, required_id, subject_id) VALUES (0, '98711-02', '98714-02');
+-- Exemplo de INSERT
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id)
+VALUES (0, '98AJ', '95301-04', '98AJ', '95300-04');
+
+-- Todos os INSERTs corrigidos
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AJ', '95301-04', '98AJ', '95300-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (1, '98AJ', '4646B-04', '98AJ', '98705-02');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AJ', '4611E-04', '98AJ', '95303-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AJ', '4611F-04', '98AJ', '4611C-06');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AJ', '4645H-04', '98AJ', '4645G-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AJ', '98902-02', '98AJ', '98901-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (1, '98AJ', '46515-04', '98AJ', '95303-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AJ', '98G03-04', '98AJ', '4646B-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (1, '98AJ', '95304-04', '98AJ', '95301-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AJ', '98701-04', '98AJ', '4646B-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AJ', '98701-04', '98AJ', '4611C-06');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (2, '98AJ', '98702-04', '98AJ', '4645H-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AJ', '98716-04', '98AJ', '98701-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (2, '98AJ', '98801-04', '98AJ', '4636H-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AJ', '4636H-04', '98AJ', '4611F-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AJ', '98713-04', '98AJ', '4611F-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AJ', '98713-04', '98AJ', '46515-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AJ', '98H00-04', '98AJ', '98902-02');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (1, '98AJ', '98703-02', '98AJ', '4611E-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AJ', '98802-02', '98AJ', '98801-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AJ', '98905-04', '98AJ', '98801-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AJ', '4646N-04', '98AJ', '95302-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (1, '98AJ', '4646N-04', '98AJ', '95301-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AJ', '4646X-04', '98AJ', '98716-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AJ', '4646Z-04', '98AJ', '4645H-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (1, '98AJ', '98700-04', '98AJ', '98G03-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (1, '98AJ', '98700-04', '98AJ', '98713-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (1, '98AJ', '4647F-04', '98AJ', '46515-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AJ', '98709-04', '98AJ', '98700-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AJ', '98708-04', '98AJ', '4611E-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (2, '98AJ', '98710-02', '98AJ', '98709-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AJ', '4646I-04', '98AJ', '98700-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AJ', '4646M-04', '98AJ', '4611E-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (1, '98AJ', '98704-04', '98AJ', '98802-02');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AJ', '98706-04', '98AJ', '98708-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (1, '98AJ', '4645K-04', '98AJ', '46515-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (1, '98AJ', '4645K-04', '98AJ', '98G03-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AJ', '4647A-04', '98AJ', '98709-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AJ', '4611G-04', '98AJ', '95304-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (1, '98AJ', '4645J-04', '98AJ', '4646I-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AJ', '98715-04', '98AJ', '4646Z-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (1, '98AJ', '4647B-04', '98AJ', '98709-04');
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AJ', '98714-02', '98AJ', '98711-02');
+

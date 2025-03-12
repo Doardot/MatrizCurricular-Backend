@@ -3,13 +3,12 @@ package com.matrizcurricular.matriz.infra.database.entities;
 import java.util.List;
 
 import jakarta.persistence.Column;
+import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.MapsId;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
@@ -17,16 +16,16 @@ import jakarta.persistence.Table;
 @Table(name = "course_subject")
 public class CourseSubject {
 
-   @Id
-   @GeneratedValue(strategy = GenerationType.IDENTITY)
-   @Column(name = "id", nullable = false)
-   private long id;
+   @EmbeddedId
+   private CourseSubjectId id;
 
    @ManyToOne(fetch = FetchType.LAZY)
+   @MapsId("courseId") // Referencia o campo da chave composta
    @JoinColumn(name = "course_id", referencedColumnName = "curriculum_code", nullable = false)
    private Course course;
 
    @ManyToOne(fetch = FetchType.LAZY)
+   @MapsId("subjectId") // Referencia o campo da chave composta
    @JoinColumn(name = "subject_id", referencedColumnName = "credit_code", nullable = false)
    private Subject subject;
 
@@ -39,47 +38,56 @@ public class CourseSubject {
    @Column(name = "position_requirement", nullable = true)
    private Integer positionRequirement;
 
-   public CourseSubject() {
-   }
+   // Construtores, getters e setters
+   public CourseSubject() {}
 
    public CourseSubject(Course course, Subject subject, int semester, List<Requirements> requirements) {
-      this.course = course;
-      this.subject = subject;
-      this.semester = semester;
-      this.requirements = requirements;
+       this.id = new CourseSubjectId(course.getCurriculumCode(), subject.getCreditCode());
+       this.course = course;
+       this.subject = subject;
+       this.semester = semester;
+       this.requirements = requirements;
    }
 
-   public Course getCourse() {
-      return course;
-   }
+    public CourseSubjectId getId() {
+        return id;
+    }
 
-   public void setCourse(Course course) {
-      this.course = course;
-   }
+    public void setId(CourseSubjectId id) {
+        this.id = id;
+    }
 
-   public Subject getSubject() {
-      return subject;
-   }
+    public Course getCourse() {
+        return course;
+    }
 
-   public void setSubject(Subject subject) {
-      this.subject = subject;
-   }
+    public void setCourse(Course course) {
+        this.course = course;
+    }
 
-   public int getSemester() {
-      return semester;
-   }
+    public Subject getSubject() {
+        return subject;
+    }
 
-   public void setSemester(int semester) {
-      this.semester = semester;
-   }
+    public void setSubject(Subject subject) {
+        this.subject = subject;
+    }
 
-   public List<Requirements> getRequirements() {
-      return requirements;
-   }
+    public int getSemester() {
+        return semester;
+    }
 
-   public void setRequirements(List<Requirements> requirements) {
-      this.requirements = requirements;
-   }
+    public void setSemester(int semester) {
+        this.semester = semester;
+    }
+
+    public List<Requirements> getRequirements() {
+        return requirements;
+    }
+
+    public void setRequirements(List<Requirements> requirements) {
+        this.requirements = requirements;
+    }
 
     public Integer getPositionRequirement() {
         return positionRequirement;
