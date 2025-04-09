@@ -246,9 +246,6 @@ INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AJ', '98
 INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AJ', '4647B-04', 8);
 INSERT INTO course_subject (course_id, subject_id, semester) VALUES ('98AJ', '98714-02', 8);
 
--- Exemplo de INSERT
-INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id)
-VALUES (0, '98AJ', '95301-04', '98AJ', '95300-04');
 
 -- Todos os INSERTs corrigidos
 INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AJ', '95301-04', '98AJ', '95300-04');
@@ -295,3 +292,172 @@ INSERT INTO requirements (requisite_type, course_id, subject_id, required_course
 INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (1, '98AJ', '4647B-04', '98AJ', '98709-04');
 INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES (0, '98AJ', '98714-02', '98AJ', '98711-02');
 
+-- insert de CDIA
+INSERT INTO subject (credit_code, name, credits, description) VALUES
+('98H03-04', 'Introdução À Ciência De Dados', 4, 'Conceitos básicos de ciência de dados.');
+INSERT INTO subject (credit_code, name, credits, description) VALUES
+('98H04-06', 'Programação Orientada A Dados', 6, 'Abordagem orientada a dados na programação.');
+INSERT INTO subject (credit_code, name, credits, description) VALUES
+('98F33-04', 'Álgebra Linear E Matricial', 4, 'Conceitos de álgebra linear e matrizes.');
+INSERT INTO subject (credit_code, name, credits, description) VALUES
+('98H01-04', 'Coleta, Preparação E Análise De Dados', 4, 'Técnicas de manipulação de dados.');
+INSERT INTO subject (credit_code, name, credits, description) VALUES
+('98F29-04', 'Inferência Comparada', 4, 'Métodos de inferência estatística.');
+INSERT INTO subject (credit_code, name, credits, description) VALUES
+('98H05-04', 'Aprendizado Supervisionado', 4, 'Introdução ao aprendizado supervisionado.');
+INSERT INTO subject (credit_code, name, credits, description) VALUES
+('98F30-04', 'Análise Multivariada', 4, 'Estudo de variáveis multivariadas.');
+INSERT INTO subject (credit_code, name, credits, description) VALUES
+('4117D-04', 'Cálculo III', 4, 'Cálculo avançado em várias variáveis.');
+INSERT INTO subject (credit_code, name, credits, description) VALUES
+('98721-04', 'Introdução À Visão Computacional', 4, 'Fundamentos de visão computacional.');
+INSERT INTO subject (credit_code, name, credits, description) VALUES
+('98H06-02', 'Projeto Em Ciência De Dados I', 2, 'Projeto prático em ciência de dados.');
+INSERT INTO subject (credit_code, name, credits, description) VALUES
+('98F31-04', 'Tópicos De Álgebra Linear', 4, 'Tópicos avançados em álgebra linear.');
+INSERT INTO subject (credit_code, name, credits, description) VALUES
+('98H07-04', 'Visualização De Dados', 4, 'Técnicas de visualização de dados.');
+INSERT INTO subject (credit_code, name, credits, description) VALUES
+('98H08-04', 'Aprendizado Não Supervisionado', 4, 'Métodos de aprendizado não supervisionado.');
+INSERT INTO subject (credit_code, name, credits, description) VALUES
+('98H09-04', 'Aprendizado Profundo I', 4, 'Introdução ao aprendizado profundo.');
+INSERT INTO subject (credit_code, name, credits, description) VALUES
+('98H10-04', 'Introd. Ao Processamento De Linguagem Natural', 4, 'Conceitos de PLN.');
+INSERT INTO subject (credit_code, name, credits, description) VALUES
+('98H11-02', 'Sistemas De Recomendação', 2, 'Técnicas de recomendação automatizada.');
+INSERT INTO subject (credit_code, name, credits, description) VALUES
+('98H12-04', 'Aprendizado Por Reforço', 4, 'Fundamentos do aprendizado por reforço.');
+INSERT INTO subject (credit_code, name, credits, description) VALUES
+('98H13-04', 'Aprendizado Profundo II', 4, 'Tópicos avançados em aprendizado profundo.');
+INSERT INTO subject (credit_code, name, credits, description) VALUES
+('98H14-02', 'Projeto Em Ciência De Dados II', 2, 'Continuação de projeto em ciência de dados.');
+INSERT INTO subject (credit_code, name, credits, description) VALUES
+('98F32-04', 'Previsão De Séries Temporais', 4, 'Modelagem de séries temporais.');
+INSERT INTO subject (credit_code, name, credits, description) VALUES
+('98H15-02', 'Projeto Em Ciência De Dados III', 2, 'Projeto final em ciência de dados.');
+
+
+
+
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES
+('98AH', '95303-04', 1), -- MATEMATICA DISCRETA
+('98AH', '4611C-06', 1), -- FUNDAMENTOS DE PROGRAMACAO
+('98AH', '98705-02', 1), -- INTRODUCAO A COMPUTACAO
+('98AH', '95300-04', 1), -- CALCULO I
+('98AH', '98H03-04', 1), -- INTRODUCAO A CIENCIA DE DADOS
+
+('98AH', '4645G-04', 2), -- ALGORITMOS E ESTRUTURA DE DADOS I
+('98AH', '98H04-06', 2), -- PROGRAMACAO ORIENTADA A DADOS
+('98AH', '95304-04', 2), -- PROBABILIDADE E ESTATISTICA
+('98AH', '95301-04', 2), -- CALCULO II
+('98AH', '98800-04', 2), -- FUNDAMENTOS DE SISTEMAS COMPUTACIONAIS
+
+('98AH', '4611E-04', 3), -- LOGICA PARA COMPUTACAO
+('98AH', '98901-04', 3), -- BANCO DE DADOS I
+('98AH', '98H01-04', 3), -- COLETA PREPARACAO E ANALISE DE DADOS
+('98AH', '98F29-04', 3), -- INFERENCIA COMPARADA
+('98AH', '98F33-04', 3), -- ALGEBRA LINEAR E MATRICIAL
+
+('98AH', '4645H-04', 4), -- ALGORITMOS E ESTRUTURA DE DADOS II
+('98AH', '98708-04', 4), -- INTELIGENCIA ARTIFICIAL
+('98AH', '98902-02', 4), -- BANCO DE DADOS II
+('98AH', '98H05-04', 4), -- APRENDIZADO SUPERVISIONADO
+('98AH', '98F30-04', 4), -- ANALISE MULTIVARIADA
+('98AH', '4117D-04', 4), -- CALCULO III
+('98AH', '98713-04', 4), -- FUNDAMENTOS DE PROCESSAMENTO PARALELO E DISTRIBUIDO
+
+('98AH', '4646Z-04', 5), -- PROJETO E OTIMIZACAO DE ALGORITMOS
+('98AH', '98H00-04', 5), -- INFRAESTRUTURA PARA GESTAO DE DADOS
+('98AH', '98H07-04', 5), -- VISUALIZACAO DE DADOS
+('98AH', '98H06-02', 5), -- PROJETO EM CIENCIA DE DADOS I
+('98AH', '98F31-04', 5), -- TOPICOS DE ALGEBRA LINEAR
+('98AH', '98700-04', 5); -- SISTEMAS OPERACIONAIS
+
+INSERT INTO course_subject (course_id, subject_id, semester, position_requirement) VALUES
+('98AH', '98721-04', 5, 60), -- INTRODUCAO A VISAO COMPUTACIONAL
+('98AH', '98801-04', 6, 90), -- ENGENHARIA DE SOFTWARE I
+('98AH', '1501A-04', 7, 60), -- ETICA E CIDADANIA
+('98AH', '11521-04', 8, 60), -- HUMANISMO E CULTURA RELIGIOSA
+('98AH', '254CF-02', 8, 60); -- FORMACAO DO EMPREENDEDOR
+
+INSERT INTO course_subject (course_id, subject_id, semester) VALUES
+('98AH', '46515-04', 6), -- LINGUAGENS AUTOMATOS E COMPUTACAO
+('98AH', '98H11-02', 6), -- SISTEMAS DE RECOMENDACAO
+('98AH', '98H08-04', 6), -- APRENDIZADO NAO-SUPERVISIONADO
+('98AH', '98H10-04', 6), -- INTRODUCAO AO PROCESSAMENTO DE LINGUAGEM NATURAL
+('98AH', '98H09-04', 6), -- APRENDIZADO PROFUNDO I
+('98AH', '98709-04', 6), -- FUNDAMENTOS DE REDES DE COMPUTADORES
+
+('98AH', '98H12-04', 7), -- APRENDIZADO POR REFORCO
+('98AH', '98H14-02', 7), -- PROJETO EM CIENCIA DE DADOS II
+('98AH', '98H13-04', 7), -- APRENDIZADO PROFUNDO II
+('98AH', '98802-02', 7), -- ENGENHARIA DE SOFTWARE II
+('98AH', '4636N-04', 7), -- INFRAESTRUTURA DE TECNOLOGIA DA INFORMACAO
+
+('98AH', '98H15-02', 8), -- PROJETO EM CIENCIA DE DADOS III
+('98AH', '98F32-04', 8); -- PREVISAO DE SERIES TEMPORAIS
+
+INSERT INTO requirements (requisite_type, course_id, subject_id, required_course_id, required_subject_id) VALUES
+-- Semestre 1
+-- (Não há requisitos para as disciplinas do semestre 1)
+
+-- Semestre 2
+(1, '98AH', '98800-04', '98AH', '98705-02'), -- Introdução à Computação
+(0, '98AH', '95301-04', '98AH', '95300-04'), -- Cálculo I
+(0, '98AH', '95304-04', '98AH', '95300-04'), -- Cálculo I
+(0, '98AH', '98H04-06', '98AH', '4611C-06'), -- Fundamentos de Programação
+(0, '98AH', '98H04-06', '98AH', '98H03-04'), -- Introdução à Ciência de Dados
+(0, '98AH', '4645G-04', '98AH', '4611C-06'), -- Fundamentos de Programação
+
+-- Semestre 3
+(0, '98AH', '98F29-04', '98AH', '95304-04'), -- Probabilidade e Estatística
+(0, '98AH', '98H01-04', '98AH', '98H04-06'), -- Programação Orientada a Dados
+(0, '98AH', '98901-04', '98AH', '98H03-04'), -- Introdução à Ciência de Dados
+(0, '98AH', '4611E-04', '98AH', '95303-04'), -- Matemática Discreta
+
+-- Semestre 4
+(0, '98AH', '98713-04', '98AH', '98H04-06'), -- Programação Orientada a Dados
+(0, '98AH', '4117D-04', '98AH', '95301-04'), -- Cálculo II
+(0, '98AH', '98F30-04', '98AH', '95304-04'), -- Probabilidade e Estatística
+(0, '98AH', '98F30-04', '98AH', '98F33-04'), -- Álgebra Linear e Matricial
+(0, '98AH', '98H05-04', '98AH', '98F29-04'), -- Inferência Comparada
+(0, '98AH', '98H05-04', '98AH', '98F33-04'), -- Álgebra Linear e Matricial
+(0, '98AH', '98902-02', '98AH', '98901-04'), -- Banco de Dados I
+(0, '98AH', '98708-04', '98AH', '4611E-04'), -- Lógica para Computação
+(0, '98AH', '4645H-04', '98AH', '4645G-04'), -- Algoritmos e Estruturas de Dados I
+
+-- Semestre 5
+(1, '98AH', '98700-04', '98AH', '98713-04'), -- Fundamentos de Processamento Paralelo e Distribuído
+(1, '98AH', '98700-04', '98AH', '98800-04'), -- Fundamentos de Sistemas Computacionais
+(0, '98AH', '98F31-04', '98AH', '98F33-04'), -- Álgebra Linear e Matricial
+(0, '98AH', '98F31-04', '98AH', '4117D-04'), -- Cálculo III
+(0, '98AH', '98H06-02', '98AH', '98H01-04'), -- Coleta, Preparação e Análise de Dados
+(1, '98AH', '98H06-02', '98AH', '98H05-04'), -- Aprendizado Supervisionado
+(0, '98AH', '98H07-04', '98AH', '98H01-04'), -- Coleta, Preparação e Análise de Dados
+(1, '98AH', '98H00-04', '98AH', '98902-02'), -- Banco de Dados II
+(0, '98AH', '4646Z-04', '98AH', '4645H-04'), -- Algoritmos e Estruturas de Dados II
+
+-- Semestre 6
+(0, '98AH', '98709-04', '98AH', '98700-04'), -- Sistemas Operacionais
+(0, '98AH', '98H09-04', '98AH', '98H05-04'), -- Aprendizado Supervisionado
+(0, '98AH', '98H09-04', '98AH', '98F30-04'), -- Análise Multivariada
+(0, '98AH', '98H09-04', '98AH', '98F31-04'), -- Tópicos de Álgebra Linear
+(1, '98AH', '98H09-04', '98AH', '98721-04'), -- Introdução à Visão Computacional
+(0, '98AH', '98H08-04', '98AH', '98H05-04'), -- Aprendizado Supervisionado
+(0, '98AH', '98H11-02', '98AH', '98708-04'), -- Inteligência Artificial
+(1, '98AH', '46515-04', '98AH', '95303-04'), -- Matemática Discreta
+
+-- Semestre 7
+(0, '98AH', '4636N-04', '98AH', '98709-04'), -- Fundamentos de Redes
+(0, '98AH', '98802-02', '98AH', '98801-04'), -- Engenharia de Software I
+(0, '98AH', '98H13-04', '98AH', '98H09-04'), -- Aprendizado Profundo I
+(1, '98AH', '98H13-04', '98AH', '98H10-04'), -- Introdução ao Processamento de Linguagem Natural
+(0, '98AH', '98H14-02', '98AH', '98H06-02'), -- Projeto em Ciência de Dados I
+(1, '98AH', '98H14-02', '98AH', '98H00-04'), -- Infraestrutura para Gestão de Dados
+(1, '98AH', '98H14-02', '98AH', '98H08-04'), -- Aprendizado Não Supervisionado
+(0, '98AH', '98H12-04', '98AH', '98708-04'), -- Inteligência Artificial
+
+-- Semestre 8
+(0, '98AH', '98F32-04', '98AH', '95304-04'), -- Probabilidade e Estatística
+(0, '98AH', '98H15-02', '98AH', '98H14-02'), -- Projeto em Ciência de Dados II
+(0, '98AH', '98H15-02', '98AH', '98H07-04'); -- Visualização de Dados
